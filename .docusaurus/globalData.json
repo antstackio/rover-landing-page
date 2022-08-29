@@ -1,0 +1,69 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "Components/s3 Lambda",
+              "path": "/docs/Components/s3 Lambda",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Modules/Base Module",
+              "path": "/docs/Modules/Base Module",
+              "sidebar": "wikiSidebar"
+            },
+            {
+              "id": "Modules/CRUD",
+              "path": "/docs/Modules/CRUD",
+              "sidebar": "wikiSidebar"
+            },
+            {
+              "id": "Modules/Customizable",
+              "path": "/docs/Modules/Customizable",
+              "sidebar": "wikiSidebar"
+            },
+            {
+              "id": "Modules/Email Auth Module",
+              "path": "/docs/Modules/Email Auth Module",
+              "sidebar": "wikiSidebar"
+            },
+            {
+              "id": "Modules/Test Module",
+              "path": "/docs/Modules/Test Module",
+              "sidebar": "wikiSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            },
+            "wikiSidebar": {
+              "link": {
+                "path": "/docs/Modules/Base Module",
+                "label": "Modules/Base Module"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

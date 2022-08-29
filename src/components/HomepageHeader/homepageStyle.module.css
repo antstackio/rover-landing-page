@@ -1,0 +1,59 @@
+:root {
+  --roverLogo: url("../../../static/img/rover_logo2.png");
+  --roverText: #240934;
+}
+
+.homepageContainer {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../static/img/rover-background.svg");
+}
+
+.roverlogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 79px;
+  height: 166px;
+}
+
+.roverlogo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--roverLogo);
+}
+
+.roverSubText {
+  margin-top: -23px;
+  text-align: center;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40.9259px;
+  line-height: 54px;
+  /* identical to box height */
+  color: var(--roverText);
+}
+
+.rovercli {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 59px; */
+  /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.vectorImg {
+  margin-top: -8%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+html[data-theme="dark"] {
+  --roverLogo: url("../../../static/img/roverLight.png");
+  --roverText: #ffffff;
+}

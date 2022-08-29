@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Modules/CRUD",
+  "id": "Modules/CRUD",
+  "title": "CRUD",
+  "description": "",
+  "source": "@site/docs/Modules/CRUD.mdx",
+  "sourceDirName": "Modules",
+  "slug": "/Modules/CRUD",
+  "permalink": "/docs/Modules/CRUD",
+  "draft": false,
+  "editUrl": "#/docs/Modules/CRUD.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "wikiSidebar",
+  "previous": {
+    "title": "Base Module",
+    "permalink": "/docs/Modules/Base Module"
+  },
+  "next": {
+    "title": "Customizable",
+    "permalink": "/docs/Modules/Customizable"
+  }
+}

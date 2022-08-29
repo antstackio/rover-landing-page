@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+:root {
+  --infoBackground: #ffffff;
+  --copyField: #e5e5e5;
+  --border: 1.09865px solid #bdb5c2;
+  --subInfoTitle: #240934;
+  --subInfoDesc: #8f8197;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  gap: 201px;
+}
+
+.infoContainer {
+  background: var(--infoBackground);
+  border: var(--border);
+  border-radius: 10.9865px;
+  /* width: 432px; */
+  width: 30%;
+  /* height: 210px; */
+}
+
+.infoContent {
+  display: flex;
+  margin: 22px 23px;
+  align-items: center;
+  gap: 23px;
+}
+
+/* .infoImages {
+  margin-right: 10px;
+  border: 1px solid red;
+  width: 100px;
+  height: 50px;
+} */
+
+.infoImages {
+  width: 50px;
+  height: 50px;
+}
+
+.editIcon {
+  width: 134px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background: url("../../../static/img/edit_icon.png");
+}
+
+.cloudIcon {
+  width: 92px;
+  height: 50px;
+  background: url("../../../static/img/cloud_icon.png");
+  background-repeat: no-repeat;
+}
+
+/* .infoIcon{
+    width: 100px;
+    height: 50px;
+    
+} */
+
+.subInfo {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  width: 80%;
+}
+
+.subInfo h1 {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+  color: var(--subInfoTitle);
+}
+
+.subInfo p {
+  height: 75px;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 156% */
+  color: var(--subInfoDesc);
+  text-align: left;
+}
+
+.copyContainer {
+  display: flex;
+  background: var(--copyField);
+  border-radius: 5px;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.copyContainer button {
+  cursor: pointer;
+  border: none;
+  background: var(--copyField);
+  margin-right: 12px;
+}
+
+.copyContainer p {
+  height: 21px;
+  margin: 0;
+  margin-left: 12px;
+  padding: 0;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #6c6c6c;
+}
+
+html[data-theme="dark"] {
+  --infoBackground: #2f2f2f;
+  --copyField: #242424;
+  --border: none;
+  --subInfoTitle: #e4e4e4;
+  --subInfoDesc: #a0a0a0;
+}

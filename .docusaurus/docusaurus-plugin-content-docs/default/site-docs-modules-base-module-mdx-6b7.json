@@ -1,0 +1,20 @@
+{
+  "unversionedId": "Modules/Base Module",
+  "id": "Modules/Base Module",
+  "title": "Base Module",
+  "description": "",
+  "source": "@site/docs/Modules/Base Module.mdx",
+  "sourceDirName": "Modules",
+  "slug": "/Modules/Base Module",
+  "permalink": "/docs/Modules/Base Module",
+  "draft": false,
+  "editUrl": "#/docs/Modules/Base Module.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "wikiSidebar",
+  "next": {
+    "title": "CRUD",
+    "permalink": "/docs/Modules/CRUD"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "unversionedId": "Modules/Test Module",
+  "id": "Modules/Test Module",
+  "title": "Test Module",
+  "description": "",
+  "source": "@site/docs/Modules/Test Module.mdx",
+  "sourceDirName": "Modules",
+  "slug": "/Modules/Test Module",
+  "permalink": "/docs/Modules/Test Module",
+  "draft": false,
+  "editUrl": "#/docs/Modules/Test Module.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "wikiSidebar",
+  "previous": {
+    "title": "Email Auth Module",
+    "permalink": "/docs/Modules/Email Auth Module"
+  }
+}

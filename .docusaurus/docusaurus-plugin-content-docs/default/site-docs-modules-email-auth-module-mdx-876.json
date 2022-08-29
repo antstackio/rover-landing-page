@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Modules/Email Auth Module",
+  "id": "Modules/Email Auth Module",
+  "title": "Email Auth Module",
+  "description": "",
+  "source": "@site/docs/Modules/Email Auth Module.mdx",
+  "sourceDirName": "Modules",
+  "slug": "/Modules/Email Auth Module",
+  "permalink": "/docs/Modules/Email Auth Module",
+  "draft": false,
+  "editUrl": "#/docs/Modules/Email Auth Module.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "wikiSidebar",
+  "previous": {
+    "title": "Customizable",
+    "permalink": "/docs/Modules/Customizable"
+  },
+  "next": {
+    "title": "Test Module",
+    "permalink": "/docs/Modules/Test Module"
+  }
+}
