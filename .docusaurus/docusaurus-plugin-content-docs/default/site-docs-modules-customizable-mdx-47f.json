@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "frontMatter": {},
-  "sidebar": "wikiSidebar",
+  "sidebar": "tutorialSidebar",
   "previous": {
     "title": "CRUD",
     "permalink": "/docs/Modules/CRUD"

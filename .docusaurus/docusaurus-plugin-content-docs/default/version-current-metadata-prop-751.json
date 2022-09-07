@@ -12,13 +12,12 @@
         "type": "link",
         "label": "Quickstart",
         "href": "/docs/intro",
+        "className": "quickStyle",
         "docId": "intro"
       },
       {
         "type": "category",
         "label": "Components",
-        "collapsible": true,
-        "collapsed": true,
         "items": [
           {
             "type": "link",
@@ -26,13 +25,14 @@
             "href": "/docs/Components/s3 Lambda",
             "docId": "Components/s3 Lambda"
           }
-        ]
+        ],
+        "className": "componentStyle",
+        "collapsed": true,
+        "collapsible": true
       },
       {
         "type": "category",
         "label": "Modules",
-        "collapsible": true,
-        "collapsed": true,
         "items": [
           {
             "type": "link",
@@ -64,39 +64,10 @@
             "href": "/docs/Modules/Test Module",
             "docId": "Modules/Test Module"
           }
-        ]
-      }
-    ],
-    "wikiSidebar": [
-      {
-        "type": "link",
-        "label": "Base Module",
-        "href": "/docs/Modules/Base Module",
-        "docId": "Modules/Base Module"
-      },
-      {
-        "type": "link",
-        "label": "CRUD",
-        "href": "/docs/Modules/CRUD",
-        "docId": "Modules/CRUD"
-      },
-      {
-        "type": "link",
-        "label": "Customizable",
-        "href": "/docs/Modules/Customizable",
-        "docId": "Modules/Customizable"
-      },
-      {
-        "type": "link",
-        "label": "Email Auth Module",
-        "href": "/docs/Modules/Email Auth Module",
-        "docId": "Modules/Email Auth Module"
-      },
-      {
-        "type": "link",
-        "label": "Test Module",
-        "href": "/docs/Modules/Test Module",
-        "docId": "Modules/Test Module"
+        ],
+        "className": "moduleStyle",
+        "collapsed": true,
+        "collapsible": true
       }
     ]
   },
@@ -117,31 +88,31 @@
       "id": "Modules/Base Module",
       "title": "Base Module",
       "description": "",
-      "sidebar": "wikiSidebar"
+      "sidebar": "tutorialSidebar"
     },
     "Modules/CRUD": {
       "id": "Modules/CRUD",
       "title": "CRUD",
       "description": "",
-      "sidebar": "wikiSidebar"
+      "sidebar": "tutorialSidebar"
     },
     "Modules/Customizable": {
       "id": "Modules/Customizable",
       "title": "Customizable",
       "description": "",
-      "sidebar": "wikiSidebar"
+      "sidebar": "tutorialSidebar"
     },
     "Modules/Email Auth Module": {
       "id": "Modules/Email Auth Module",
       "title": "Email Auth Module",
       "description": "",
-      "sidebar": "wikiSidebar"
+      "sidebar": "tutorialSidebar"
     },
     "Modules/Test Module": {
       "id": "Modules/Test Module",
       "title": "Test Module",
       "description": "",
-      "sidebar": "wikiSidebar"
+      "sidebar": "tutorialSidebar"
     }
   }
 }

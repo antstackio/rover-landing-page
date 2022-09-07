@@ -79,7 +79,11 @@
               "tags": [],
               "version": "current",
               "frontMatter": {},
-              "sidebar": "wikiSidebar",
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "s3 Lambda",
+                "permalink": "/docs/Components/s3 Lambda"
+              },
               "next": {
                 "title": "CRUD",
                 "permalink": "/docs/Modules/CRUD"
@@ -99,7 +103,7 @@
               "tags": [],
               "version": "current",
               "frontMatter": {},
-              "sidebar": "wikiSidebar",
+              "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Base Module",
                 "permalink": "/docs/Modules/Base Module"
@@ -123,7 +127,7 @@
               "tags": [],
               "version": "current",
               "frontMatter": {},
-              "sidebar": "wikiSidebar",
+              "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "CRUD",
                 "permalink": "/docs/Modules/CRUD"
@@ -147,7 +151,7 @@
               "tags": [],
               "version": "current",
               "frontMatter": {},
-              "sidebar": "wikiSidebar",
+              "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Customizable",
                 "permalink": "/docs/Modules/Customizable"
@@ -171,7 +175,7 @@
               "tags": [],
               "version": "current",
               "frontMatter": {},
-              "sidebar": "wikiSidebar",
+              "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Email Auth Module",
                 "permalink": "/docs/Modules/Email Auth Module"
@@ -183,25 +187,27 @@
             "tutorialSidebar": [
               {
                 "type": "doc",
-                "id": "intro"
+                "id": "intro",
+                "label": "Quickstart",
+                "className": "quickStyle",
+                "translatable": true
               },
               {
                 "type": "category",
                 "label": "Components",
-                "collapsible": true,
-                "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
                     "id": "Components/s3 Lambda"
                   }
-                ]
+                ],
+                "className": "componentStyle",
+                "collapsed": true,
+                "collapsible": true
               },
               {
                 "type": "category",
                 "label": "Modules",
-                "collapsible": true,
-                "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
@@ -223,29 +229,10 @@
                     "type": "doc",
                     "id": "Modules/Test Module"
                   }
-                ]
-              }
-            ],
-            "wikiSidebar": [
-              {
-                "type": "doc",
-                "id": "Modules/Base Module"
-              },
-              {
-                "type": "doc",
-                "id": "Modules/CRUD"
-              },
-              {
-                "type": "doc",
-                "id": "Modules/Customizable"
-              },
-              {
-                "type": "doc",
-                "id": "Modules/Email Auth Module"
-              },
-              {
-                "type": "doc",
-                "id": "Modules/Test Module"
+                ],
+                "className": "moduleStyle",
+                "collapsed": true,
+                "collapsible": true
               }
             ]
           }

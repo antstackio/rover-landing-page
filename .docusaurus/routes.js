@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '320'),
+    component: ComponentCreator('/docs', '50b'),
     routes: [
       {
         path: '/docs/Components/s3 Lambda',
@@ -115,33 +115,33 @@ export default [
       },
       {
         path: '/docs/Modules/Base Module',
-        component: ComponentCreator('/docs/Modules/Base Module', 'edb'),
+        component: ComponentCreator('/docs/Modules/Base Module', '978'),
         exact: true,
-        sidebar: "wikiSidebar"
+        sidebar: "tutorialSidebar"
       },
       {
         path: '/docs/Modules/CRUD',
-        component: ComponentCreator('/docs/Modules/CRUD', '684'),
+        component: ComponentCreator('/docs/Modules/CRUD', 'ff1'),
         exact: true,
-        sidebar: "wikiSidebar"
+        sidebar: "tutorialSidebar"
       },
       {
         path: '/docs/Modules/Customizable',
-        component: ComponentCreator('/docs/Modules/Customizable', '89b'),
+        component: ComponentCreator('/docs/Modules/Customizable', '09c'),
         exact: true,
-        sidebar: "wikiSidebar"
+        sidebar: "tutorialSidebar"
       },
       {
         path: '/docs/Modules/Email Auth Module',
-        component: ComponentCreator('/docs/Modules/Email Auth Module', '7c5'),
+        component: ComponentCreator('/docs/Modules/Email Auth Module', '5ab'),
         exact: true,
-        sidebar: "wikiSidebar"
+        sidebar: "tutorialSidebar"
       },
       {
         path: '/docs/Modules/Test Module',
-        component: ComponentCreator('/docs/Modules/Test Module', '6a3'),
+        component: ComponentCreator('/docs/Modules/Test Module', 'b9a'),
         exact: true,
-        sidebar: "wikiSidebar"
+        sidebar: "tutorialSidebar"
       }
     ]
   },

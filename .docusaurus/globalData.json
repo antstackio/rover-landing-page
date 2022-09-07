@@ -23,27 +23,27 @@
             {
               "id": "Modules/Base Module",
               "path": "/docs/Modules/Base Module",
-              "sidebar": "wikiSidebar"
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "Modules/CRUD",
               "path": "/docs/Modules/CRUD",
-              "sidebar": "wikiSidebar"
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "Modules/Customizable",
               "path": "/docs/Modules/Customizable",
-              "sidebar": "wikiSidebar"
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "Modules/Email Auth Module",
               "path": "/docs/Modules/Email Auth Module",
-              "sidebar": "wikiSidebar"
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "Modules/Test Module",
               "path": "/docs/Modules/Test Module",
-              "sidebar": "wikiSidebar"
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],
@@ -51,13 +51,7 @@
             "tutorialSidebar": {
               "link": {
                 "path": "/docs/intro",
-                "label": "intro"
-              }
-            },
-            "wikiSidebar": {
-              "link": {
-                "path": "/docs/Modules/Base Module",
-                "label": "Modules/Base Module"
+                "label": "Quickstart"
               }
             }
           }

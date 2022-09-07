@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "frontMatter": {},
-  "sidebar": "wikiSidebar",
+  "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Email Auth Module",
     "permalink": "/docs/Modules/Email Auth Module"

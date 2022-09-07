@@ -12,7 +12,11 @@
   "tags": [],
   "version": "current",
   "frontMatter": {},
-  "sidebar": "wikiSidebar",
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "s3 Lambda",
+    "permalink": "/docs/Components/s3 Lambda"
+  },
   "next": {
     "title": "CRUD",
     "permalink": "/docs/Modules/CRUD"

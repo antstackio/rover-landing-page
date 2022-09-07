@@ -49,3 +49,22 @@
 .npmImg {
   margin-top: 10px;
 }
+.componentStyle .menu__list-item-collapsible > a::before {
+  content: url("../../static/img/compIcon.svg");
+  margin-top: 2%;
+  margin-right: 10px;
+}
+.moduleStyle .menu__list-item-collapsible > a::before {
+  content: url("../../static/img/moduleIcon.svg");
+  margin-top: 2%;
+  margin-right: 10px;
+}
+.quickStyle .menu__link::before {
+  content: url("../../static/img/quickIcon.svg");
+  margin-top: 2%;
+  margin-right: 10px;
+}
+.docNav {
+  border-top: 1px solid red;
+  border-radius: 60px;
+}
