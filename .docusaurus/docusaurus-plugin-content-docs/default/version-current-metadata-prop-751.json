@@ -21,9 +21,9 @@
         "items": [
           {
             "type": "link",
-            "label": "S3 Lambda",
-            "href": "/docs/Components/S3 Lambda",
-            "docId": "Components/S3 Lambda"
+            "label": "S3_Lambda",
+            "href": "/docs/Components/S3_Lambda",
+            "docId": "Components/S3_Lambda"
           },
           {
             "type": "link",
@@ -78,9 +78,9 @@
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "Components/S3 Lambda": {
-      "id": "Components/S3 Lambda",
-      "title": "S3 Lambda",
+    "Components/S3_Lambda": {
+      "id": "Components/S3_Lambda",
+      "title": "S3_Lambda",
       "description": "",
       "sidebar": "tutorialSidebar"
     },

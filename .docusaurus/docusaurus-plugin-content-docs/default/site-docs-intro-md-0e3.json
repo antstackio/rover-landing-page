@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "S3 Lambda",
-    "permalink": "/docs/Components/S3 Lambda"
+    "title": "S3_Lambda",
+    "permalink": "/docs/Components/S3_Lambda"
   }
 }

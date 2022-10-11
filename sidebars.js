@@ -38,7 +38,7 @@ const sidebars = {
       type: "category",
       label: "Components",
       items: [
-        "Components/S3 Lambda",
+        "Components/S3_Lambda",
         "Components/CRUD"
       ],
       className: "componentStyle",

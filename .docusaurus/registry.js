@@ -1,6 +1,7 @@
 export default {
   '01a85c17': [() => import(/* webpackChunkName: '01a85c17' */ '@theme/BlogTagsListPage'), '@theme/BlogTagsListPage', require.resolveWeak('@theme/BlogTagsListPage')],
   '031793e1': [() => import(/* webpackChunkName: '031793e1' */ '~blog/default/blog-tags-facebook-038.json'), '~blog/default/blog-tags-facebook-038.json', require.resolveWeak('~blog/default/blog-tags-facebook-038.json')],
+  '033f2d58': [() => import(/* webpackChunkName: '033f2d58' */ '@site/docs/Components/S3_Lambda.mdx'), '@site/docs/Components/S3_Lambda.mdx', require.resolveWeak('@site/docs/Components/S3_Lambda.mdx')],
   '096bfee4': [() => import(/* webpackChunkName: '096bfee4' */ '~blog/default/blog-tags-facebook-038-list.json'), '~blog/default/blog-tags-facebook-038-list.json', require.resolveWeak('~blog/default/blog-tags-facebook-038-list.json')],
   '0e384e19': [() => import(/* webpackChunkName: '0e384e19' */ '@site/docs/intro.md'), '@site/docs/intro.md', require.resolveWeak('@site/docs/intro.md')],
   '17896441': [() => import(/* webpackChunkName: '17896441' */ '@theme/DocItem'), '@theme/DocItem', require.resolveWeak('@theme/DocItem')],
@@ -24,7 +25,6 @@ export default {
   '814f3328': [() => import(/* webpackChunkName: '814f3328' */ '~blog/default/blog-post-list-prop-default.json'), '~blog/default/blog-post-list-prop-default.json', require.resolveWeak('~blog/default/blog-post-list-prop-default.json')],
   '8717b14a': [() => import(/* webpackChunkName: '8717b14a' */ '@site/blog/2019-05-29-long-blog-post.md?truncated=true'), '@site/blog/2019-05-29-long-blog-post.md?truncated=true', require.resolveWeak('@site/blog/2019-05-29-long-blog-post.md?truncated=true')],
   '876fd274': [() => import(/* webpackChunkName: '876fd274' */ '@site/docs/Modules/Email Auth Module.mdx'), '@site/docs/Modules/Email Auth Module.mdx', require.resolveWeak('@site/docs/Modules/Email Auth Module.mdx')],
-  '888da551': [() => import(/* webpackChunkName: '888da551' */ '@site/docs/Components/S3 Lambda.mdx'), '@site/docs/Components/S3 Lambda.mdx', require.resolveWeak('@site/docs/Components/S3 Lambda.mdx')],
   '925b3f96': [() => import(/* webpackChunkName: '925b3f96' */ '@site/blog/2019-05-28-first-blog-post.md?truncated=true'), '@site/blog/2019-05-28-first-blog-post.md?truncated=true', require.resolveWeak('@site/blog/2019-05-28-first-blog-post.md?truncated=true')],
   '935f2afb': [() => import(/* webpackChunkName: '935f2afb' */ '~docs/default/version-current-metadata-prop-751.json'), '~docs/default/version-current-metadata-prop-751.json', require.resolveWeak('~docs/default/version-current-metadata-prop-751.json')],
   '9e4087bc': [() => import(/* webpackChunkName: '9e4087bc' */ '@theme/BlogArchivePage'), '@theme/BlogArchivePage', require.resolveWeak('@theme/BlogArchivePage')],

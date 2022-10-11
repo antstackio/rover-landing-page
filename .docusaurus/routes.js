@@ -64,7 +64,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'a70'),
+    component: ComponentCreator('/docs', '147'),
     routes: [
       {
         path: '/docs/Components/CRUD',
@@ -73,8 +73,8 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/Components/S3 Lambda',
-        component: ComponentCreator('/docs/Components/S3 Lambda', '633'),
+        path: '/docs/Components/S3_Lambda',
+        component: ComponentCreator('/docs/Components/S3_Lambda', '438'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
