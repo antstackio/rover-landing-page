@@ -7,8 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Rover",
-  tagline: "Rover That Do Everything related to Sam in your Finger Tip",
-  url: "https://deployment.do78fubntpry5.amplifyapp.com",
+  tagline: "Backend Simplified",
+  url: "https://main.do78fubntpry5.amplifyapp.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
