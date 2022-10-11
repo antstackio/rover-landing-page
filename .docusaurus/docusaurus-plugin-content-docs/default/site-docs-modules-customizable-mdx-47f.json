@@ -16,9 +16,5 @@
   "previous": {
     "title": "CRUD",
     "permalink": "/docs/Modules/CRUD"
-  },
-  "next": {
-    "title": "Email Auth Module",
-    "permalink": "/docs/Modules/Email Auth Module"
   }
 }

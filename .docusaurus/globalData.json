@@ -11,8 +11,13 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "Components/s3 Lambda",
-              "path": "/docs/Components/s3 Lambda",
+              "id": "Components/CRUD",
+              "path": "/docs/Components/CRUD",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/S3 Lambda",
+              "path": "/docs/Components/S3 Lambda",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -42,8 +47,7 @@
             },
             {
               "id": "Modules/Test Module",
-              "path": "/docs/Modules/Test Module",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/Modules/Test Module"
             }
           ],
           "draftIds": [],

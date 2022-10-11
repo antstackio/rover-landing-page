@@ -52,20 +52,20 @@ const Info = () => {
       id: 1,
       title: "Create SAM Projects",
       subText:
-        "Rover is a package or CLI-based library that generates SAM projects based on user input",
+        "`rover init` generates new SAM projects  or add components to existing project.",
       image: "img/edit_icon2.svg",
       imageDark: "img/edit_dark.svg",
       altText: "Edit Icon",
-      copyText: "$ rover init",
+      copyText: "rover init",
     },
     {
       id: 2,
       title: "Deploy SAM Projects",
-      subText: "Deploying SAM projetcs to AWS through CLI and CI/CD Pipeline",
+      subText: "`rover deploy` generates CI/CD pipeline in SAM or deploys through SAM CLI.",
       image: "img/cloud_icon2.svg",
       imageDark: "img/cloud_dark.svg",
       altText: "Cloud Icon",
-      copyText: "$ rover deploy",
+      copyText: "rover deploy",
     },
   ];
   // const [copyText1,setCopyText1]=useState('$ rover init');

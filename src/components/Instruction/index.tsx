@@ -6,26 +6,26 @@ const Instruction = () => {
   const descData1 = [
     {
       id: 1,
-      title: "Customize SAM Project",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in dui ac dui fringilla convallis a at massa. ",
+      title: "Generate SAM Project",
+      desc: "Generates new SAM project using  Modules like CRUD and Email auth or create your Custom Modules by selecting Components defined by rover .",
     },
     {
       id: 2,
-      title: "Add Existing SAM Projects",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in dui ac dui fringilla convallis a at massa. ",
+      title: "Add Components to existing SAM Projects",
+      desc: "Add rover components or modules to existing SAM projects ",
     },
   ];
 
   const descData2 = [
     {
       id: 1,
-      title: "Deploy SAM Projets Through CI/CD Pipelines",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in dui ac dui fringilla convallis a at massa. ",
+      title: "Generate CI/CD Pipelines",
+      desc: "Generate CI/CD pipelines in SAM projects by giving few deployment details ",
     },
     {
       id: 2,
       title: "Deploy SAM Projets Through CLI",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in dui ac dui fringilla convallis a at massa. ",
+      desc: "Deploy SAM projects using SAM cli just by few clicks ",
     },
   ];
 

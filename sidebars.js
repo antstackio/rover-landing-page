@@ -37,18 +37,22 @@ const sidebars = {
     {
       type: "category",
       label: "Components",
-      items: ["Components/s3 Lambda"],
+      items: [
+        "Components/S3 Lambda",
+        "Components/CRUD"
+      ],
       className: "componentStyle",
     },
     {
       type: "category",
       label: "Modules",
       items: [
+        "Modules/Email Auth Module",
         "Modules/Base Module",
         "Modules/CRUD",
         "Modules/Customizable",
-        "Modules/Email Auth Module",
-        "Modules/Test Module",
+       
+        
       ],
       className: "moduleStyle",
     },

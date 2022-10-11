@@ -14,21 +14,45 @@
           "editUrlLocalized": "#/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/anshumansingh/Documents/rover-LandPage/sidebars.js",
-          "contentPath": "/Users/anshumansingh/Documents/rover-LandPage/docs",
-          "contentPathLocalized": "/Users/anshumansingh/Documents/rover-LandPage/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/dheerajbhatt/proj/rovertest/rover-landing-page/sidebars.js",
+          "contentPath": "/Users/dheerajbhatt/proj/rovertest/rover-landing-page/docs",
+          "contentPathLocalized": "/Users/dheerajbhatt/proj/rovertest/rover-landing-page/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
-              "unversionedId": "Components/s3 Lambda",
-              "id": "Components/s3 Lambda",
-              "title": "s3 Lambda",
+              "unversionedId": "Components/CRUD",
+              "id": "Components/CRUD",
+              "title": "CRUD",
               "description": "",
-              "source": "@site/docs/Components/s3 Lambda.mdx",
+              "source": "@site/docs/Components/CRUD.mdx",
               "sourceDirName": "Components",
-              "slug": "/Components/s3 Lambda",
-              "permalink": "/docs/Components/s3 Lambda",
+              "slug": "/Components/CRUD",
+              "permalink": "/docs/Components/CRUD",
               "draft": false,
-              "editUrl": "#/docs/Components/s3 Lambda.mdx",
+              "editUrl": "#/docs/Components/CRUD.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "S3 Lambda",
+                "permalink": "/docs/Components/S3 Lambda"
+              },
+              "next": {
+                "title": "Email Auth Module",
+                "permalink": "/docs/Modules/Email Auth Module"
+              }
+            },
+            {
+              "unversionedId": "Components/S3 Lambda",
+              "id": "Components/S3 Lambda",
+              "title": "S3 Lambda",
+              "description": "",
+              "source": "@site/docs/Components/S3 Lambda.mdx",
+              "sourceDirName": "Components",
+              "slug": "/Components/S3 Lambda",
+              "permalink": "/docs/Components/S3 Lambda",
+              "draft": false,
+              "editUrl": "#/docs/Components/S3 Lambda.mdx",
               "tags": [],
               "version": "current",
               "frontMatter": {},
@@ -38,8 +62,8 @@
                 "permalink": "/docs/intro"
               },
               "next": {
-                "title": "Base Module",
-                "permalink": "/docs/Modules/Base Module"
+                "title": "CRUD",
+                "permalink": "/docs/Components/CRUD"
               }
             },
             {
@@ -61,8 +85,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "s3 Lambda",
-                "permalink": "/docs/Components/s3 Lambda"
+                "title": "S3 Lambda",
+                "permalink": "/docs/Components/S3 Lambda"
               }
             },
             {
@@ -81,8 +105,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "s3 Lambda",
-                "permalink": "/docs/Components/s3 Lambda"
+                "title": "Email Auth Module",
+                "permalink": "/docs/Modules/Email Auth Module"
               },
               "next": {
                 "title": "CRUD",
@@ -131,10 +155,6 @@
               "previous": {
                 "title": "CRUD",
                 "permalink": "/docs/Modules/CRUD"
-              },
-              "next": {
-                "title": "Email Auth Module",
-                "permalink": "/docs/Modules/Email Auth Module"
               }
             },
             {
@@ -153,12 +173,12 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Customizable",
-                "permalink": "/docs/Modules/Customizable"
+                "title": "CRUD",
+                "permalink": "/docs/Components/CRUD"
               },
               "next": {
-                "title": "Test Module",
-                "permalink": "/docs/Modules/Test Module"
+                "title": "Base Module",
+                "permalink": "/docs/Modules/Base Module"
               }
             },
             {
@@ -174,12 +194,7 @@
               "editUrl": "#/docs/Modules/Test Module.mdx",
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Email Auth Module",
-                "permalink": "/docs/Modules/Email Auth Module"
-              }
+              "frontMatter": {}
             }
           ],
           "drafts": [],
@@ -198,7 +213,11 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Components/s3 Lambda"
+                    "id": "Components/S3 Lambda"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Components/CRUD"
                   }
                 ],
                 "className": "componentStyle",
@@ -211,6 +230,10 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "Modules/Email Auth Module"
+                  },
+                  {
+                    "type": "doc",
                     "id": "Modules/Base Module"
                   },
                   {
@@ -220,14 +243,6 @@
                   {
                     "type": "doc",
                     "id": "Modules/Customizable"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Modules/Email Auth Module"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Modules/Test Module"
                   }
                 ],
                 "className": "moduleStyle",

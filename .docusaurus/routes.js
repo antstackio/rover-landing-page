@@ -3,72 +3,113 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', 'b5a'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', 'bcd'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'b8b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '452'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '9f3'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '723'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '63b'),
+    exact: true
+  },
+  {
     path: '/blog',
-    component: ComponentCreator('/blog', 'fc1'),
+    component: ComponentCreator('/blog', 'b4d'),
     exact: true
   },
   {
     path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '775'),
+    component: ComponentCreator('/blog/archive', 'db7'),
     exact: true
   },
   {
     path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '2da'),
+    component: ComponentCreator('/blog/first-blog-post', '2e8'),
     exact: true
   },
   {
     path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '8c1'),
+    component: ComponentCreator('/blog/long-blog-post', '77a'),
     exact: true
   },
   {
     path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'e29'),
+    component: ComponentCreator('/blog/mdx-blog-post', 'c79'),
     exact: true
   },
   {
     path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '4ec'),
+    component: ComponentCreator('/blog/tags', '2bd'),
     exact: true
   },
   {
     path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '009'),
+    component: ComponentCreator('/blog/tags/docusaurus', 'bdd'),
     exact: true
   },
   {
     path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', 'dcc'),
+    component: ComponentCreator('/blog/tags/facebook', '9bd'),
     exact: true
   },
   {
     path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '03c'),
+    component: ComponentCreator('/blog/tags/hello', '093'),
     exact: true
   },
   {
     path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '588'),
+    component: ComponentCreator('/blog/tags/hola', '7e2'),
     exact: true
   },
   {
     path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'b8c'),
+    component: ComponentCreator('/blog/welcome', '540'),
     exact: true
   },
   {
     path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', 'a07'),
+    component: ComponentCreator('/markdown-page', '15f'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '50b'),
+    component: ComponentCreator('/docs', 'a70'),
     routes: [
       {
-        path: '/docs/Components/s3 Lambda',
-        component: ComponentCreator('/docs/Components/s3 Lambda', '825'),
+        path: '/docs/Components/CRUD',
+        component: ComponentCreator('/docs/Components/CRUD', 'e26'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/Components/S3 Lambda',
+        component: ComponentCreator('/docs/Components/S3 Lambda', '633'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -104,15 +145,14 @@ export default [
       },
       {
         path: '/docs/Modules/Test Module',
-        component: ComponentCreator('/docs/Modules/Test Module', 'b9a'),
-        exact: true,
-        sidebar: "tutorialSidebar"
+        component: ComponentCreator('/docs/Modules/Test Module', 'bbe'),
+        exact: true
       }
     ]
   },
   {
     path: '/',
-    component: ComponentCreator('/', '90e'),
+    component: ComponentCreator('/', 'a87'),
     exact: true
   },
   {

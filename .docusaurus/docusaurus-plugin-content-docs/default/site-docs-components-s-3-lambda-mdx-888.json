@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Components/S3 Lambda",
+  "id": "Components/S3 Lambda",
+  "title": "S3 Lambda",
+  "description": "",
+  "source": "@site/docs/Components/S3 Lambda.mdx",
+  "sourceDirName": "Components",
+  "slug": "/Components/S3 Lambda",
+  "permalink": "/docs/Components/S3 Lambda",
+  "draft": false,
+  "editUrl": "#/docs/Components/S3 Lambda.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "CRUD",
+    "permalink": "/docs/Components/CRUD"
+  }
+}

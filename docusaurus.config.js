@@ -81,14 +81,14 @@ const config = {
             position: "right",
             className: "linkIcons",
             value:
-              "<a href='https://www.npmjs.com/package/@rover-tools/engine'><div class='npmImg'></div></a>",
+              "<a href='https://www.npmjs.com/package/@rover-tools/cli'><div class='npmImg'></div></a>",
           },
           {
             type: "html",
             position: "right",
             className: "linkIcons",
             value:
-              "<a href='https://github.com/antstackio/rover-landing-page'><div class='gitHubImg'></div></a>",
+              "<a href='https://github.com/antstackio/rover-cli'><div class='gitHubImg'></div></a>",
           },
         ],
       },

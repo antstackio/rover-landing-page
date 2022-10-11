@@ -14,8 +14,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "s3 Lambda",
-    "permalink": "/docs/Components/s3 Lambda"
+    "title": "Email Auth Module",
+    "permalink": "/docs/Modules/Email Auth Module"
   },
   "next": {
     "title": "CRUD",

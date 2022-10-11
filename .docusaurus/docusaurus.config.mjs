@@ -26,7 +26,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/anshumansingh/Documents/rover-LandPage/sidebars.js",
+          "sidebarPath": "/Users/dheerajbhatt/proj/rovertest/rover-landing-page/sidebars.js",
           "editUrl": "#"
         },
         "blog": {
@@ -34,7 +34,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/Users/anshumansingh/Documents/rover-LandPage/src/css/custom.css"
+          "customCss": "/Users/dheerajbhatt/proj/rovertest/rover-landing-page/src/css/custom.css"
         }
       }
     ]
@@ -58,13 +58,13 @@ export default {
           "type": "html",
           "position": "right",
           "className": "linkIcons",
-          "value": "<a href='https://www.npmjs.com/package/@rover-tools/engine'><div class='npmImg'></div></a>"
+          "value": "<a href='https://www.npmjs.com/package/@rover-tools/cli'><div class='npmImg'></div></a>"
         },
         {
           "type": "html",
           "position": "right",
           "className": "linkIcons",
-          "value": "<a href='https://github.com/antstackio/rover-landing-page'><div class='gitHubImg'></div></a>"
+          "value": "<a href='https://github.com/antstackio/rover-cli'><div class='gitHubImg'></div></a>"
         }
       ],
       "hideOnScroll": false

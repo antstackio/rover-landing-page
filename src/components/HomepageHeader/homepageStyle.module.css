@@ -11,12 +11,18 @@
   display: flex;
   flex-direction: column;
   background-image: url("../../../static/img/rover-background.svg");
+  /* height: 100vh; */
+}
+
+.rover {
+  width: 100%;
+  height: 100vh;
 }
 
 .roverlogo {
   display: flex;
   justify-content: center;
-  margin-top: 79px;
+  /* margin-top: 79px; */
   height: 166px;
 }
 
@@ -39,15 +45,23 @@
 }
 
 .rovercli {
+  width: 100%;
+  height: 85%;
+  margin-top: -5%;
   display: flex;
   justify-content: center;
+  object-fit: contain;
   /* margin-top: 59px; */
   /* margin-left: 20px;
     margin-right: 20px; */
 }
 
+.rovercli img {
+  width: auto;
+}
+
 .vectorImg {
-  margin-top: -8%;
+  margin-top: -4%;
   display: flex;
   justify-content: center;
   gap: 10%;

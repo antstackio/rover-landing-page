@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Components/CRUD",
+  "id": "Components/CRUD",
+  "title": "CRUD",
+  "description": "",
+  "source": "@site/docs/Components/CRUD.mdx",
+  "sourceDirName": "Components",
+  "slug": "/Components/CRUD",
+  "permalink": "/docs/Components/CRUD",
+  "draft": false,
+  "editUrl": "#/docs/Components/CRUD.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "S3 Lambda",
+    "permalink": "/docs/Components/S3 Lambda"
+  },
+  "next": {
+    "title": "Email Auth Module",
+    "permalink": "/docs/Modules/Email Auth Module"
+  }
+}

@@ -21,9 +21,15 @@
         "items": [
           {
             "type": "link",
-            "label": "s3 Lambda",
-            "href": "/docs/Components/s3 Lambda",
-            "docId": "Components/s3 Lambda"
+            "label": "S3 Lambda",
+            "href": "/docs/Components/S3 Lambda",
+            "docId": "Components/S3 Lambda"
+          },
+          {
+            "type": "link",
+            "label": "CRUD",
+            "href": "/docs/Components/CRUD",
+            "docId": "Components/CRUD"
           }
         ],
         "className": "componentStyle",
@@ -34,6 +40,12 @@
         "type": "category",
         "label": "Modules",
         "items": [
+          {
+            "type": "link",
+            "label": "Email Auth Module",
+            "href": "/docs/Modules/Email Auth Module",
+            "docId": "Modules/Email Auth Module"
+          },
           {
             "type": "link",
             "label": "Base Module",
@@ -51,18 +63,6 @@
             "label": "Customizable",
             "href": "/docs/Modules/Customizable",
             "docId": "Modules/Customizable"
-          },
-          {
-            "type": "link",
-            "label": "Email Auth Module",
-            "href": "/docs/Modules/Email Auth Module",
-            "docId": "Modules/Email Auth Module"
-          },
-          {
-            "type": "link",
-            "label": "Test Module",
-            "href": "/docs/Modules/Test Module",
-            "docId": "Modules/Test Module"
           }
         ],
         "className": "moduleStyle",
@@ -72,9 +72,15 @@
     ]
   },
   "docs": {
-    "Components/s3 Lambda": {
-      "id": "Components/s3 Lambda",
-      "title": "s3 Lambda",
+    "Components/CRUD": {
+      "id": "Components/CRUD",
+      "title": "CRUD",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "Components/S3 Lambda": {
+      "id": "Components/S3 Lambda",
+      "title": "S3 Lambda",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
@@ -111,8 +117,7 @@
     "Modules/Test Module": {
       "id": "Modules/Test Module",
       "title": "Test Module",
-      "description": "",
-      "sidebar": "tutorialSidebar"
+      "description": ""
     }
   }
 }
