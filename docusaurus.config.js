@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Rover",
   tagline: "Rover That Do Everything related to Sam in your Finger Tip",
-  url: "https://rover.tools",
+  url: "https://deployment.do78fubntpry5.amplifyapp.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
