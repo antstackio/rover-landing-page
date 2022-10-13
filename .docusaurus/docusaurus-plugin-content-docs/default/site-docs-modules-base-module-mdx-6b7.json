@@ -2,7 +2,7 @@
   "unversionedId": "Modules/Base Module",
   "id": "Modules/Base Module",
   "title": "Base Module",
-  "description": "",
+  "description": "This is a sample module with 2 lambdas in 2 stacks.",
   "source": "@site/docs/Modules/Base Module.mdx",
   "sourceDirName": "Modules",
   "slug": "/Modules/Base Module",
@@ -14,7 +14,7 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Email Auth Module",
+    "title": "Email auth Module",
     "permalink": "/docs/Modules/Email Auth Module"
   },
   "next": {

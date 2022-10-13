@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Rover",
   tagline: "Backend Simplified",
-  url: "https://main.do78fubntpry5.amplifyapp.com",
+  url:  "https://rover.tools",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

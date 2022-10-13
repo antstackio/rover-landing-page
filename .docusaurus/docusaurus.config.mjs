@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Rover",
-  "tagline": "Rover That Do Everything related to Sam in your Finger Tip",
+  "tagline": "Backend Simplified",
   "url": "https://rover.tools",
   "baseUrl": "/",
   "onBrokenLinks": "throw",

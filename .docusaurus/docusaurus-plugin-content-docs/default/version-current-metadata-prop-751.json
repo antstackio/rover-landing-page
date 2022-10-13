@@ -21,7 +21,7 @@
         "items": [
           {
             "type": "link",
-            "label": "S3_Lambda",
+            "label": "S3 Lambda",
             "href": "/docs/Components/S3_Lambda",
             "docId": "Components/S3_Lambda"
           },
@@ -42,7 +42,7 @@
         "items": [
           {
             "type": "link",
-            "label": "Email Auth Module",
+            "label": "Email auth Module",
             "href": "/docs/Modules/Email Auth Module",
             "docId": "Modules/Email Auth Module"
           },
@@ -75,43 +75,43 @@
     "Components/CRUD": {
       "id": "Components/CRUD",
       "title": "CRUD",
-      "description": "",
+      "description": "CRUD component can be used to create a Rest API.By default this will have a sample book api ,",
       "sidebar": "tutorialSidebar"
     },
     "Components/S3_Lambda": {
       "id": "Components/S3_Lambda",
-      "title": "S3_Lambda",
-      "description": "",
+      "title": "S3 Lambda",
+      "description": "We can add any number components to  a project.",
       "sidebar": "tutorialSidebar"
     },
     "intro": {
       "id": "intro",
       "title": "Quickstart",
-      "description": "Here we Go with Rover 😎 ....",
+      "description": "Getting Started",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Base Module": {
       "id": "Modules/Base Module",
       "title": "Base Module",
-      "description": "",
+      "description": "This is a sample module with 2 lambdas in 2 stacks.",
       "sidebar": "tutorialSidebar"
     },
     "Modules/CRUD": {
       "id": "Modules/CRUD",
       "title": "CRUD",
-      "description": "",
+      "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Customizable": {
       "id": "Modules/Customizable",
       "title": "Customizable",
-      "description": "",
+      "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Email Auth Module": {
       "id": "Modules/Email Auth Module",
-      "title": "Email Auth Module",
-      "description": "",
+      "title": "Email auth Module",
+      "description": "Email auth Module can be used to set email authentication using Cognito. This module helps in creating  login using email auth and this ex",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Test Module": {

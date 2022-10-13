@@ -2,7 +2,7 @@
   "unversionedId": "Modules/Customizable",
   "id": "Modules/Customizable",
   "title": "Customizable",
-  "description": "",
+  "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
   "source": "@site/docs/Modules/Customizable.mdx",
   "sourceDirName": "Modules",
   "slug": "/Modules/Customizable",

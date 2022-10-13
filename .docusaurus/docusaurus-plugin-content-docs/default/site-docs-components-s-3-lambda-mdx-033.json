@@ -1,8 +1,8 @@
 {
   "unversionedId": "Components/S3_Lambda",
   "id": "Components/S3_Lambda",
-  "title": "S3_Lambda",
-  "description": "",
+  "title": "S3 Lambda",
+  "description": "We can add any number components to  a project.",
   "source": "@site/docs/Components/S3_Lambda.mdx",
   "sourceDirName": "Components",
   "slug": "/Components/S3_Lambda",

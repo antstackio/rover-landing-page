@@ -2,7 +2,7 @@
   "unversionedId": "Modules/CRUD",
   "id": "Modules/CRUD",
   "title": "CRUD",
-  "description": "",
+  "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
   "source": "@site/docs/Modules/CRUD.mdx",
   "sourceDirName": "Modules",
   "slug": "/Modules/CRUD",

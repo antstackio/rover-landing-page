@@ -3,8 +3,6 @@ sidebar_position: 1
 ---
 # Quickstart
 
-Here we Go with Rover 😎 ....
-
 ## Getting Started
 
 Rover is a backend automation package that generates SAM projects based on predefined modules and components. And helps in deploying  SAM project through CLI or generate CI/CD Pipeline. It has a set of predefined modules and components which are commonly used.

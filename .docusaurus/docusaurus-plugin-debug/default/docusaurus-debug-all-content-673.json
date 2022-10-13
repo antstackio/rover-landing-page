@@ -22,7 +22,7 @@
               "unversionedId": "Components/CRUD",
               "id": "Components/CRUD",
               "title": "CRUD",
-              "description": "",
+              "description": "CRUD component can be used to create a Rest API.By default this will have a sample book api ,",
               "source": "@site/docs/Components/CRUD.mdx",
               "sourceDirName": "Components",
               "slug": "/Components/CRUD",
@@ -34,19 +34,19 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "S3_Lambda",
+                "title": "S3 Lambda",
                 "permalink": "/docs/Components/S3_Lambda"
               },
               "next": {
-                "title": "Email Auth Module",
+                "title": "Email auth Module",
                 "permalink": "/docs/Modules/Email Auth Module"
               }
             },
             {
               "unversionedId": "Components/S3_Lambda",
               "id": "Components/S3_Lambda",
-              "title": "S3_Lambda",
-              "description": "",
+              "title": "S3 Lambda",
+              "description": "We can add any number components to  a project.",
               "source": "@site/docs/Components/S3_Lambda.mdx",
               "sourceDirName": "Components",
               "slug": "/Components/S3_Lambda",
@@ -70,7 +70,7 @@
               "unversionedId": "intro",
               "id": "intro",
               "title": "Quickstart",
-              "description": "Here we Go with Rover 😎 ....",
+              "description": "Getting Started",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -85,7 +85,7 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "S3_Lambda",
+                "title": "S3 Lambda",
                 "permalink": "/docs/Components/S3_Lambda"
               }
             },
@@ -93,7 +93,7 @@
               "unversionedId": "Modules/Base Module",
               "id": "Modules/Base Module",
               "title": "Base Module",
-              "description": "",
+              "description": "This is a sample module with 2 lambdas in 2 stacks.",
               "source": "@site/docs/Modules/Base Module.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/Base Module",
@@ -105,7 +105,7 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Email Auth Module",
+                "title": "Email auth Module",
                 "permalink": "/docs/Modules/Email Auth Module"
               },
               "next": {
@@ -117,7 +117,7 @@
               "unversionedId": "Modules/CRUD",
               "id": "Modules/CRUD",
               "title": "CRUD",
-              "description": "",
+              "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
               "source": "@site/docs/Modules/CRUD.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/CRUD",
@@ -141,7 +141,7 @@
               "unversionedId": "Modules/Customizable",
               "id": "Modules/Customizable",
               "title": "Customizable",
-              "description": "",
+              "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
               "source": "@site/docs/Modules/Customizable.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/Customizable",
@@ -160,8 +160,8 @@
             {
               "unversionedId": "Modules/Email Auth Module",
               "id": "Modules/Email Auth Module",
-              "title": "Email Auth Module",
-              "description": "",
+              "title": "Email auth Module",
+              "description": "Email auth Module can be used to set email authentication using Cognito. This module helps in creating  login using email auth and this ex",
               "source": "@site/docs/Modules/Email Auth Module.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/Email Auth Module",
