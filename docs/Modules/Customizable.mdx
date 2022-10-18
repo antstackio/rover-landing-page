@@ -1,24 +1,17 @@
 # Customizable
 
 
-CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  , 
-its similar to CRUD component , The resources are mapped and the accesss are fine grained
+Customizable module can be used to create our own modules using Components. We can select the components provided by rover and create our own modules.
 
 ``` shell
 $ rover init                                                                                                                                                                                        ──(Thu,Oct13)─┘
-  Hey, what do you want ? create new SAM project
+  Hey, what do you want   create new SAM project
   App Name: test
   Choose your language Node
-  Module Type : CRUD : CRUD APIs
-  API Name : book
-  API Path(e.g /book) : /book
-  Please select your Methods : put, get, post, delete
-  Do you want to add another API ? Yes
-  API Name : author
-  API Path(e.g /book) : /author
-  Please select your Methods : put, get, post, delete
-  Do you want to add another API ? No
-  Do you want to add one more modules ?  No
+  Module Type : Customizable : Create your own Module
+  Stack 1 Name:  test
+  Please select your App_type : s3_lambda, crud_api
+  Do you want to add one more modules    No
 ```
 
 this is the sample infrastructure generated
@@ -31,7 +24,31 @@ Globals:
   Function:
     Timeout: 30
 Resources:
-  roverARoles:
+  lambdas:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: lambdas
+      CodeUri: lambdas/
+      Runtime: nodejs14.x
+      Policies:
+        - AWSLambdaDynamoDBExecutionRole
+      Handler: app.lambdaHandler
+  Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: Bucket
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders:
+              - "*"
+            AllowedMethods:
+              - GET
+              - PUT
+              - POST
+              - DELETE
+            AllowedOrigins:
+              - "*"
+  bookRoles:
     Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
@@ -73,23 +90,21 @@ Resources:
                 Resource:
                   - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/bookTable
                   - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/bookTable/index/*
-                  - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/authorTable
-                  - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/authorTable/index/*
           PolicyName: dynamodbcrud
-      RoleName: roverARoles
+      RoleName: bookRoles
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
         - arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs
-  roverAAPIs:
+  bookAPIs:
     Type: AWS::Serverless::Api
     Properties:
-      Name: roverAAPIs
+      Name: bookAPIs
       StageName: dev
       DefinitionBody:
         Fn::Transform:
           Name: AWS::Include
           Parameters:
-            Location: roverAAPIs_apigateway/swagger.yaml
+            Location: bookAPIs_apigateway/swagger.yaml
   bookFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -106,37 +121,10 @@ Resources:
             TableName:
               Ref: bookTable
       Handler: app.lambdaHandler
-  authorFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: authorFunction
-      CodeUri: authorFunction/
-      Runtime: nodejs14.x
-      Environment:
-        Variables:
-          Table:
-            Ref: authorTable
-      Policies:
-        - AWSLambdaDynamoDBExecutionRole
-        - DynamoDBCrudPolicy:
-            TableName:
-              Ref: authorTable
-      Handler: app.lambdaHandler
   bookTable:
     Type: AWS::DynamoDB::Table
     Properties:
       TableName: bookTable
-      KeySchema:
-        - AttributeName: id
-          KeyType: HASH
-      AttributeDefinitions:
-        - AttributeName: id
-          AttributeType: S
-      BillingMode: PAY_PER_REQUEST
-  authorTable:
-    Type: AWS::DynamoDB::Table
-    Properties:
-      TableName: authorTable
       KeySchema:
         - AttributeName: id
           KeyType: HASH
