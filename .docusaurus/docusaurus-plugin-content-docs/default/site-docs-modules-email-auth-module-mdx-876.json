@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "CRUD",
-    "permalink": "/docs/Components/CRUD"
-  },
-  "next": {
     "title": "Base Module",
     "permalink": "/docs/Modules/Base Module"
+  },
+  "next": {
+    "title": "CRUD",
+    "permalink": "/docs/Modules/CRUD"
   }
 }

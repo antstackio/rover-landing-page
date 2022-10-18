@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '147'),
+    component: ComponentCreator('/docs', '623'),
     routes: [
       {
         path: '/docs/Components/CRUD',
@@ -142,11 +142,6 @@ export default [
         component: ComponentCreator('/docs/Modules/Email Auth Module', '5ab'),
         exact: true,
         sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/Modules/Test Module',
-        component: ComponentCreator('/docs/Modules/Test Module', 'bbe'),
-        exact: true
       }
     ]
   },

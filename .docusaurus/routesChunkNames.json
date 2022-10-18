@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-147": {
+  "/docs-623": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-1-d-3-6b9"
@@ -220,10 +220,6 @@
   "/docs/Modules/Email Auth Module-5ab": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-modules-email-auth-module-876-d05"
-  },
-  "/docs/Modules/Test Module-bbe": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-modules-test-module-578-d01"
   },
   "/-a87": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",

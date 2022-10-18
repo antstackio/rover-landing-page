@@ -1,11 +1,10 @@
 # CRUD
 
 
-CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  , 
-its similar to CRUD component , The resources are mapped and the accesss are fine grained
+CRUD component can be used to create a Rest API. By default this will have a sample book API, it consists of Lambdas, Apigateway DynamodbTables and IAM role with fine-grained access to required resources. API specifications are defined in swagger.
 
 ``` shell
-$ rover init                                                                                                                                                                                        ──(Thu,Oct13)─┘
+$ rover init                                                                                                                                                                                       
   Hey, what do you want ? create new SAM project
   App Name: test
   Choose your language Node
@@ -27,7 +26,7 @@ Sample project structure
 ![CRUD](../.././assets/crud.png)
 
 
-this is the sample infrastructure generated
+This is the sample infrastructure generated
 
 ```yml
 AWSTemplateFormatVersion: 2010-09-09

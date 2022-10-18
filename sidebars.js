@@ -47,8 +47,9 @@ const sidebars = {
       type: "category",
       label: "Modules",
       items: [
-        "Modules/Email Auth Module",
+        
         "Modules/Base Module",
+        "Modules/Email Auth Module",
         "Modules/CRUD",
         "Modules/Customizable",
        

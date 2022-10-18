@@ -38,15 +38,15 @@
                 "permalink": "/docs/Components/S3_Lambda"
               },
               "next": {
-                "title": "Email auth Module",
-                "permalink": "/docs/Modules/Email Auth Module"
+                "title": "Base Module",
+                "permalink": "/docs/Modules/Base Module"
               }
             },
             {
               "unversionedId": "Components/S3_Lambda",
               "id": "Components/S3_Lambda",
               "title": "S3 Lambda",
-              "description": "We can add any number components to  a project.",
+              "description": "We can add any number of components to a module.",
               "source": "@site/docs/Components/S3_Lambda.mdx",
               "sourceDirName": "Components",
               "slug": "/Components/S3_Lambda",
@@ -93,7 +93,7 @@
               "unversionedId": "Modules/Base Module",
               "id": "Modules/Base Module",
               "title": "Base Module",
-              "description": "This is a sample module with 2 lambdas in 2 stacks.",
+              "description": "We can add any number of modules to a project.",
               "source": "@site/docs/Modules/Base Module.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/Base Module",
@@ -105,19 +105,19 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Email auth Module",
-                "permalink": "/docs/Modules/Email Auth Module"
+                "title": "CRUD",
+                "permalink": "/docs/Components/CRUD"
               },
               "next": {
-                "title": "CRUD",
-                "permalink": "/docs/Modules/CRUD"
+                "title": "Email auth Module",
+                "permalink": "/docs/Modules/Email Auth Module"
               }
             },
             {
               "unversionedId": "Modules/CRUD",
               "id": "Modules/CRUD",
               "title": "CRUD",
-              "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
+              "description": "CRUD component can be used to create a Rest API. By default this will have a sample book API, it consists of Lambdas, Apigateway DynamodbTables and IAM role with fine-grained access to required resources. API specifications are defined in swagger.",
               "source": "@site/docs/Modules/CRUD.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/CRUD",
@@ -129,8 +129,8 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Base Module",
-                "permalink": "/docs/Modules/Base Module"
+                "title": "Email auth Module",
+                "permalink": "/docs/Modules/Email Auth Module"
               },
               "next": {
                 "title": "Customizable",
@@ -141,7 +141,7 @@
               "unversionedId": "Modules/Customizable",
               "id": "Modules/Customizable",
               "title": "Customizable",
-              "description": "CRUD module can be used to create Rest APIs. By giving few details you can generate any number of APIs  ,",
+              "description": "Customizable module can be used to create our own modules using Components. We can select the components provided by rover and create our own modules.",
               "source": "@site/docs/Modules/Customizable.mdx",
               "sourceDirName": "Modules",
               "slug": "/Modules/Customizable",
@@ -173,28 +173,13 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "CRUD",
-                "permalink": "/docs/Components/CRUD"
-              },
-              "next": {
                 "title": "Base Module",
                 "permalink": "/docs/Modules/Base Module"
+              },
+              "next": {
+                "title": "CRUD",
+                "permalink": "/docs/Modules/CRUD"
               }
-            },
-            {
-              "unversionedId": "Modules/Test Module",
-              "id": "Modules/Test Module",
-              "title": "Test Module",
-              "description": "",
-              "source": "@site/docs/Modules/Test Module.mdx",
-              "sourceDirName": "Modules",
-              "slug": "/Modules/Test Module",
-              "permalink": "/docs/Modules/Test Module",
-              "draft": false,
-              "editUrl": "#/docs/Modules/Test Module.mdx",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {}
             }
           ],
           "drafts": [],
@@ -230,11 +215,11 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Modules/Email Auth Module"
+                    "id": "Modules/Base Module"
                   },
                   {
                     "type": "doc",
-                    "id": "Modules/Base Module"
+                    "id": "Modules/Email Auth Module"
                   },
                   {
                     "type": "doc",
