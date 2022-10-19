@@ -1,0 +1,153 @@
+# CRUD
+
+
+CRUD component can be used to create a Rest API. By default this will have a sample book API, it consists of Lambdas, Apigateway DynamodbTables and IAM role with fine-grained access to required resources. API specifications are defined in swagger.
+
+``` shell
+$ rover init                                                                                                                                                                                       
+  Hey, what do you want ? create new SAM project
+  App Name: test
+  Choose your language Node
+  Module Type : CRUD : CRUD APIs
+  API Name : book
+  API Path(e.g /book) : /book
+  Please select your Methods : put, get, post, delete
+  Do you want to add another API ? Yes
+  API Name : author
+  API Path(e.g /book) : /author
+  Please select your Methods : put, get, post, delete
+  Do you want to add another API ? No
+  Do you want to add one more modules ?  No
+```
+
+Sample project structure
+
+
+![CRUD](../.././assets/crud.png)
+
+
+This is the sample infrastructure generated
+
+```yml
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: SAM Template
+Globals:
+  Function:
+    Timeout: 30
+Resources:
+  roverARoles:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - apigateway.amazonaws.com
+                - lambda.amazonaws.com
+                - apigateway.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Path: /
+      Policies:
+        - PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource:
+                  Fn::Sub: arn:aws:lambda:*:${AWS::AccountId}:function:*
+          PolicyName: lambdainvoke
+        - PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:GetItem
+                  - dynamodb:DeleteItem
+                  - dynamodb:PutItem
+                  - dynamodb:Scan
+                  - dynamodb:Query
+                  - dynamodb:UpdateItem
+                  - dynamodb:BatchWriteItem
+                  - dynamodb:BatchGetItem
+                  - dynamodb:DescribeTable
+                  - dynamodb:ConditionCheckItem
+                Resource:
+                  - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/bookTable
+                  - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/bookTable/index/*
+                  - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/authorTable
+                  - Fn::Sub: arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/authorTable/index/*
+          PolicyName: dynamodbcrud
+      RoleName: roverARoles
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs
+  roverAAPIs:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: roverAAPIs
+      StageName: dev
+      DefinitionBody:
+        Fn::Transform:
+          Name: AWS::Include
+          Parameters:
+            Location: roverAAPIs_apigateway/swagger.yaml
+  bookFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: bookFunction
+      CodeUri: bookFunction/
+      Runtime: nodejs14.x
+      Environment:
+        Variables:
+          Table:
+            Ref: bookTable
+      Policies:
+        - AWSLambdaDynamoDBExecutionRole
+        - DynamoDBCrudPolicy:
+            TableName:
+              Ref: bookTable
+      Handler: app.lambdaHandler
+  authorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: authorFunction
+      CodeUri: authorFunction/
+      Runtime: nodejs14.x
+      Environment:
+        Variables:
+          Table:
+            Ref: authorTable
+      Policies:
+        - AWSLambdaDynamoDBExecutionRole
+        - DynamoDBCrudPolicy:
+            TableName:
+              Ref: authorTable
+      Handler: app.lambdaHandler
+  bookTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: bookTable
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      BillingMode: PAY_PER_REQUEST
+  authorTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: authorTable
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      BillingMode: PAY_PER_REQUEST
+
+```

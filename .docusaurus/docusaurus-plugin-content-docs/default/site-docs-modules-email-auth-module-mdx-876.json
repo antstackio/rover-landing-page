@@ -1,8 +1,8 @@
 {
   "unversionedId": "Modules/Email Auth Module",
   "id": "Modules/Email Auth Module",
-  "title": "Email Auth Module",
-  "description": "",
+  "title": "Email auth Module",
+  "description": "Email auth Module can be used to set email authentication using Cognito. This module helps in creating login using email authentication.",
   "source": "@site/docs/Modules/Email Auth Module.mdx",
   "sourceDirName": "Modules",
   "slug": "/Modules/Email Auth Module",
@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "CRUD",
-    "permalink": "/docs/Components/CRUD"
-  },
-  "next": {
     "title": "Base Module",
     "permalink": "/docs/Modules/Base Module"
+  },
+  "next": {
+    "title": "CRUD",
+    "permalink": "/docs/Modules/CRUD"
   }
 }

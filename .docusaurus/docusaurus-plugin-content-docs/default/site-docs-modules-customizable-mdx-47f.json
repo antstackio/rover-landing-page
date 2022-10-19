@@ -2,7 +2,7 @@
   "unversionedId": "Modules/Customizable",
   "id": "Modules/Customizable",
   "title": "Customizable",
-  "description": "",
+  "description": "Customizable module can be used to create our own modules using Components. We can select the components provided by rover and create our own modules.",
   "source": "@site/docs/Modules/Customizable.mdx",
   "sourceDirName": "Modules",
   "slug": "/Modules/Customizable",

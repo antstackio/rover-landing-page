@@ -44,10 +44,6 @@
               "id": "Modules/Email Auth Module",
               "path": "/docs/Modules/Email Auth Module",
               "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Modules/Test Module",
-              "path": "/docs/Modules/Test Module"
             }
           ],
           "draftIds": [],

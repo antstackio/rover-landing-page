@@ -2,7 +2,7 @@
   "unversionedId": "Modules/CRUD",
   "id": "Modules/CRUD",
   "title": "CRUD",
-  "description": "",
+  "description": "CRUD component can be used to create a Rest API. By default this will have a sample book API, it consists of Lambdas, Apigateway DynamodbTables and IAM role with fine-grained access to required resources. API specifications are defined in swagger.",
   "source": "@site/docs/Modules/CRUD.mdx",
   "sourceDirName": "Modules",
   "slug": "/Modules/CRUD",
@@ -14,8 +14,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Base Module",
-    "permalink": "/docs/Modules/Base Module"
+    "title": "Email auth Module",
+    "permalink": "/docs/Modules/Email Auth Module"
   },
   "next": {
     "title": "Customizable",

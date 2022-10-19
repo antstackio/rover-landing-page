@@ -1,0 +1,49 @@
+
+# S3 Lambda
+
+We can add any number of components to a module.
+
+This Components creates a simple lambda with S3 bucket as trigger.
+
+``` shell
+$ rover init                                                                                                                                                                                        
+  Hey, what do you want ? add components to existing SAM
+  ? App Name test
+  ? Choose your language Node
+  ? Select the module to which you want to add the components : roverACRUDModule
+  ? Please select your Type : s3_lambda
+  ? Do you want to add one more components to modules ? No
+```
+
+This the sample infrastructure generated
+```yaml
+ Resources:
+    Lambda:
+        Type: AWS::Serverless::Function
+        Properties:
+            FunctionName: lambdaswg
+            CodeUri: lambdaswg/
+            Runtime: nodejs14.x
+            Policies:
+                - AWSLambdaDynamoDBExecutionRole
+            Handler: app.lambdaHandler
+    Bucket:
+        Type: AWS::S3::Bucket
+        Properties:
+            BucketName: Buckethg
+            CorsConfiguration:
+                CorsRules:
+                - AllowedHeaders:
+                    - "*"
+                    AllowedMethods:
+                    - GET
+                    - PUT
+                    - POST
+                    - DELETE
+                    AllowedOrigins:
+                    - "*"
+
+```
+
+
+

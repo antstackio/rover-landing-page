@@ -21,7 +21,7 @@
         "items": [
           {
             "type": "link",
-            "label": "S3_Lambda",
+            "label": "S3 Lambda",
             "href": "/docs/Components/S3_Lambda",
             "docId": "Components/S3_Lambda"
           },
@@ -42,15 +42,15 @@
         "items": [
           {
             "type": "link",
-            "label": "Email Auth Module",
-            "href": "/docs/Modules/Email Auth Module",
-            "docId": "Modules/Email Auth Module"
-          },
-          {
-            "type": "link",
             "label": "Base Module",
             "href": "/docs/Modules/Base Module",
             "docId": "Modules/Base Module"
+          },
+          {
+            "type": "link",
+            "label": "Email auth Module",
+            "href": "/docs/Modules/Email Auth Module",
+            "docId": "Modules/Email Auth Module"
           },
           {
             "type": "link",
@@ -75,49 +75,44 @@
     "Components/CRUD": {
       "id": "Components/CRUD",
       "title": "CRUD",
-      "description": "",
+      "description": "CRUD component can be used to create a Rest API.By default this will have a sample book api ,",
       "sidebar": "tutorialSidebar"
     },
     "Components/S3_Lambda": {
       "id": "Components/S3_Lambda",
-      "title": "S3_Lambda",
-      "description": "",
+      "title": "S3 Lambda",
+      "description": "We can add any number of components to a module.",
       "sidebar": "tutorialSidebar"
     },
     "intro": {
       "id": "intro",
       "title": "Quickstart",
-      "description": "Here we Go with Rover 😎 ....",
+      "description": "Getting Started",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Base Module": {
       "id": "Modules/Base Module",
       "title": "Base Module",
-      "description": "",
+      "description": "We can add any number of modules to a project.",
       "sidebar": "tutorialSidebar"
     },
     "Modules/CRUD": {
       "id": "Modules/CRUD",
       "title": "CRUD",
-      "description": "",
+      "description": "CRUD component can be used to create a Rest API. By default this will have a sample book API, it consists of Lambdas, Apigateway DynamodbTables and IAM role with fine-grained access to required resources. API specifications are defined in swagger.",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Customizable": {
       "id": "Modules/Customizable",
       "title": "Customizable",
-      "description": "",
+      "description": "Customizable module can be used to create our own modules using Components. We can select the components provided by rover and create our own modules.",
       "sidebar": "tutorialSidebar"
     },
     "Modules/Email Auth Module": {
       "id": "Modules/Email Auth Module",
-      "title": "Email Auth Module",
-      "description": "",
+      "title": "Email auth Module",
+      "description": "Email auth Module can be used to set email authentication using Cognito. This module helps in creating login using email authentication.",
       "sidebar": "tutorialSidebar"
-    },
-    "Modules/Test Module": {
-      "id": "Modules/Test Module",
-      "title": "Test Module",
-      "description": ""
     }
   }
 }
