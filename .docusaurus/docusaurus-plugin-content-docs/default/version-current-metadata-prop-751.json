@@ -111,7 +111,7 @@
     "Modules/Email Auth Module": {
       "id": "Modules/Email Auth Module",
       "title": "Email auth Module",
-      "description": "Email auth Module can be used to set email authentication using Cognito. This module helps in creating  login using email auth and this ex",
+      "description": "Email auth Module can be used to set email authentication using Cognito. This module helps in creating login using email authentication.",
       "sidebar": "tutorialSidebar"
     }
   }
