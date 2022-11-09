@@ -5,11 +5,11 @@ sidebar_position: 1
 
 ## Getting Started
 
-Rover is a backend automation package that generates SAM projects based on predefined modules and components. And helps in deploying  SAM project through CLI or generate CI/CD Pipeline. It has a set of predefined modules and components which are commonly used.
+Rover is a backend automation tool that generates SAM projects based on predefined modules and components. It not only helps in deploying SAM project through CLI but also helps in generating CI/CD Pipelines. It has a set of commonly used modules and components which can be added and can be used immediatlely.Rover is a backend automation package that generates SAM projects based on predefined modules and components. And helps in deploying  SAM project through CLI or generate CI/CD Pipeline. It has a set of predefined modules and components which are commonly used
 
 ## Installation
 
-Rover is a CLI package designed using typescript that supports Node and Python with some of the serverless AWS Services.
+Rover is a CLI tool developed using typescript. Supporeted languages include Node and Python  along with AWS Services.
 
 To Install:
 
@@ -25,7 +25,10 @@ To Install:
 rover init
 ```
 
-on `rover init` you will get 3 choices one to create a new sam project and others to add components or modules to existing project
+After running `rover init`  you will get 3 choices
+  * Create a new sam project
+  * Add components 
+  * Add modules 
 
 ```shell
 Hey, what do you want ? 
@@ -35,7 +38,7 @@ Hey, what do you want ?
   Answer: 1
 ```
 
-on selecting the first choice you have to give project name, language  and have to select the modules to be in the project.
+On selecting the first choice you have to give project name, language  and have to select the modules to be in the project.
 
 #### Note: currently the add module feature is in progress
 
@@ -71,7 +74,7 @@ Hey, what do you want ? create new SAM project
 rover deploy
 ```
 
-on `rover deploy` you will get 3 choices
+On `rover deploy` you will get 3 choices
 
 * One to generate CI/CD pipeline
 * Deploy through CLI

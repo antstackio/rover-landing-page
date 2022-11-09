@@ -1,0 +1,101 @@
+:root {
+  --container1: #ffede0;
+  --container2: #e6f8ff;
+}
+.instruction {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10px;
+  width: 100%;
+}
+
+.heading {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  /* identical to box height */
+  text-align: left;
+  width: 100%;
+  padding: 39px 0px 0px 57px;
+  color: #1b1c1e;
+}
+
+.reverseContainer {
+  background: var(--container2);
+  border-radius: 30px;
+  margin: 0 10%;
+  padding: 20px 50px;
+}
+.container {
+  background: var(--container1);
+  border-radius: 30px;
+  margin: 0 10%;
+  padding: 20px 50px;
+}
+
+.subContainer {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly;
+  margin: 35px 0px; */
+  justify-content: center;
+  gap: 66px;
+  /* margin: 35px 0px; */
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  /* margin: 35px 0px; */
+}
+
+.descContainer {
+  position: relative;
+  width: 40%;
+}
+
+.cartoon {
+  margin-top: 14%;
+}
+
+@media screen and (max-width: 947px) {
+  .subContainer,
+  .reverse {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .descContainer {
+    width: 100%;
+  }
+  .heading {
+    text-align: center;
+    padding: 0;
+  }
+  .cartoon {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subContainer,
+  .reverse {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .descContainer {
+    width: 100%;
+  }
+  .heading {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+  }
+  .cartoon {
+    width: 50%;
+  }
+}

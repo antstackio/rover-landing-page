@@ -17,13 +17,15 @@
 }
 
 .container1 {
+  border: 1px solid;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: var(--container1);
   border-radius: 30px;
-  width: 80vw;
+
+  /* width: 80vw; */
 }
 
 .container1 h2 {
@@ -35,7 +37,7 @@
   /* identical to box height */
   text-align: left;
   width: 100%;
-  padding: 39px 0px 33px 57px;
+  padding: 10px 20px 0px 20px;
   color: #1b1c1e;
 }
 
@@ -46,7 +48,8 @@
   align-items: center;
   background: var(--container2);
   border-radius: 30px;
-  width: 80vw;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .container2 h2 {
@@ -59,7 +62,7 @@
   /* identical to box height */
   text-align: left;
   width: 100%;
-  padding: 39px 0px 33px 57px;
+  padding: 10px 20px 0px 20px;
   color: #1b1c1e;
 }
 
