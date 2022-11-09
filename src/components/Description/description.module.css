@@ -5,17 +5,33 @@
 }
 
 .descMain {
-  /* border: 1px solid red; */
   background: var(--descBackground);
   box-shadow: 0px 6.15706px 46.178px rgba(0, 0, 0, 0.1);
   border-radius: 15.3927px;
-  /* width: 426px; */
-  /* width: 50%; */
-  height: 100%;
+}
+.descMain2 {
+  background: var(--descBackground);
+  box-shadow: 0px 6.15706px 46.178px rgba(0, 0, 0, 0.1);
+  border-radius: 15.3927px;
+}
+
+.descMain:nth-child(1)::before {
+  content: url("../../../static/img/Line1.png");
+  position: absolute;
+  left: -71px;
+  top: 46%;
+}
+
+.descMain:nth-child(2)::before {
+  content: url("../../../static/img/Line 2.png");
+  position: absolute;
+  left: -71px;
+  top: 54%;
 }
 
 .descBody {
-  margin: 31px 52px;
+  margin: 25px 8px;
+  padding: 50px 18px;
 }
 
 .descBody h2 {
@@ -37,6 +53,29 @@
   line-height: 30px;
   /* or 167% */
   color: var(--descBody);
+}
+
+@media screen and (max-width: 947px) {
+  .descMain:nth-child(n)::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .descMain:nth-child(n)::before {
+    display: none;
+  }
+  .descBody {
+    padding: 18px 4px;
+  }
+  .descBody h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .descBody p {
+    font-size: 13px;
+    line-height: 24px;
+  }
 }
 
 html[data-theme="dark"] {

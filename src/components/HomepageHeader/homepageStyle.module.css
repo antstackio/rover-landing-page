@@ -4,14 +4,11 @@
 }
 
 .homepageContainer {
-  width: 100vw;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: 100vw;
-  height: 100%;
-  display: flex;
+  background-size: 100%;
+  /* display: flex; */
   flex-direction: column;
-  background-image: url("../../../static/img/rover-background.svg");
-  /* height: 100vh; */
 }
 
 .rover {
@@ -45,29 +42,32 @@
 }
 
 .rovercli {
+  margin-bottom: -8%;
   width: 100%;
-  height: 85%;
-  margin-top: -5%;
   display: flex;
   justify-content: center;
   object-fit: contain;
-  /* margin-top: 59px; */
-  /* margin-left: 20px;
-    margin-right: 20px; */
 }
 
-.rovercli img {
-  width: auto;
-}
-
-.vectorImg {
+/* .vectorImg {
   margin-top: -4%;
   display: flex;
   justify-content: center;
   gap: 10%;
-}
+} */
 
 html[data-theme="dark"] {
   --roverLogo: url("../../../static/img/roverLight.png");
   --roverText: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .roverlogo {
+    background-size: 50%;
+  }
+  .roverSubText {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 34px;
+  }
 }

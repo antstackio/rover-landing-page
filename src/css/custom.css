@@ -15,8 +15,8 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --gitIcon: url("../../static/img/git_icon.png");
-  --npmIcon: url("../../static/img/npm_logo.png");
+  --gitIcon: url("../../static/img/mark-github.svg");
+  --npmIcon: url("../../static/img/npm_logo.svg");
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -29,7 +29,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --gitIcon: url("../../static/img/git_logoDark.png");
+  --gitIcon: url("../../static/img/github_dark.svg");
 }
 
 .npmImg {
@@ -67,4 +67,8 @@
 .docNav {
   border-top: 1px solid red;
   border-radius: 60px;
+}
+
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  max-height: 400px;
 }

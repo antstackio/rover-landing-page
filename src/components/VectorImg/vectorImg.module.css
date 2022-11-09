@@ -1,0 +1,21 @@
+.vectorImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.vectorMirror {
+  display: flex;
+  transform: scaleY(-1);
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.vectorImg img {
+  width: 17vw;
+}
+
+.vectorMirror img {
+  width: 17vw;
+}
