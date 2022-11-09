@@ -159,3 +159,11 @@ html[data-theme="dark"] {
     padding: 5px 0px;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .copyContainer p {
+    margin-top: -5px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
