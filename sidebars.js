@@ -57,22 +57,22 @@ const sidebars = {
       ],
       className: "moduleStyle",
     },
-    // {
-    //   type: "category",
-    //   label: "Contribution Gudelines",
-    //   items: [
+    {
+      type: "category",
+      label: "Contribution Gudelines",
+      items: [
         
-    //     "Contribution/Introduction",
-    //     "Contribution/Rover Set Up",
-    //     "Contribution/Define new Components or Module",
-    //     "Contribution/Add new feature",
-    //     "Contribution/Fix or Report Bugs",
-    //     "Contribution/Code of Conduct",
+        "Contribution/Introduction",
+        "Contribution/Rover Set Up",
+        "Contribution/Define new Components or Module",
+        "Contribution/Add new AWS service",
+        "Contribution/Report Bugs or Feature request",
+        "Contribution/Code of Conduct",
        
         
-    //   ],
-    //   className: "contribution",
-    // },
+      ],
+      className: "contribution",
+    },
   ]
 };
 

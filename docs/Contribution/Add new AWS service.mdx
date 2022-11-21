@@ -1,0 +1,68 @@
+# Add new AWS service
+
+As mentioned in [Introduction](Introduction.mdx#add-new-feature), Rover has 2 types of feature one to generate/update AWS SAM project and other one to Deploying SAM project.
+and These are AWS cloud formation tags that are supported.
+
+
+* AWS::CloudFormation::Stack
+* AWS::Serverless::Function
+* AWS::DynamoDB::Table
+* AWS::Cognito::UserPool
+* AWS::Cognito::UserPoolClient
+* AWS::Lambda::Permission
+* AWS::IAM::Policy
+* AWS::Serverless::Api
+* AWS::Serverless::StateMachine
+* AWS::S3::Bucket
+* AWS::ApiGateway::ApiKey
+* AWS::ApiGateway::UsagePlan
+* AWS::ApiGateway::UsagePlanKey
+* AWS::ApiGateway::Authorizer
+* AWS::EC2::VPC
+* AWS::EC2::VPCGatewayAttachment
+* AWS::EC2::Subnet
+* AWS::EC2::RouteTable
+* AWS::EC2::Route
+* AWS::EC2::SubnetRouteTableAssociation
+* AWS::EC2::EIP
+* AWS::EC2::NatGateway
+* AWS::EC2::SecurityGroup
+* AWS::RDS::DBSubnetGroup
+* AWS::RDS::DBCluster
+* AWS::RDS::DBInstance
+* AWS::SecretsManager::Secret
+* AWS::CodeBuild::Project
+* AWS::IAM::Role
+
+
+#### Add new AWS service support
+
+1. Add the resources in the below  format in `rover-engine/utlities/config.ts`
+
+sample structure
+```JS
+let Baseproperties=[list of names of the properties ....]
+let OptionalProperties=[list of names of the properties ....]
+let DefaultProperties={"Handler":{"Key":"Handler","Value":"app.lambdaHandler"}} //default values
+let FinalResource= generateAWSResource("FunctionName","AWS::Serverless::Function",lambdaBase,lambdaOptional, lambdaDefault)
+// function which generates the format
+```
+
+example:
+```JS
+let lambdaBase=["FunctionName","CodeUri","Runtime"]
+let lambdaOptional=["Events","Environment","Policies","Role","Tags","Description"]
+let lambdaDefault={"Handler":{"Key":"Handler","Value":"app.lambdaHandler"}}
+let lambdaResource= generateAWSResource("FunctionName","AWS::Serverless::Function",lambdaBase,lambdaOptional, lambdaDefault)
+```
+
+2. Once its is defined , then add it in the below format to `AWSResources`   in  `rover-engine/utlities/config.ts`.
+
+```JS
+export let AWSResources={
+    "stack":stackResource,
+    "lambda":lambdaResource
+    .
+    .
+}   
+```
