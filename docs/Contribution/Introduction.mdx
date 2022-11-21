@@ -1,0 +1,66 @@
+# Introduction
+
+
+Rover is NPM package which helps us in generating/updating AWS SAM projects with help of predefined Modules and Components and It also helps us in deploying projects by generating CI/CD pipeline or directly deploy through CLI.
+
+Modules are the small  unit of projects which are frequently use like Email Auth Or CRUD.
+
+Components are one or two AWS services like Lambda with S3 Trigger.
+
+And for deployment Rover supports 2 features , one we can generate our own CI/CD pipeline or we can directly deploy through CLI.
+Rover now supports CI/CD generation of these 3 services ,
+* GitHub
+* BitBucket
+* GitLabs
+
+> Note: Please follow our [Code of Conduct](Code%20of%20Conduct.mdx) 
+
+## Contributions 
+Rover comprises of 2 packages <b>@rover-tools/cli</b> and <b>@rover-tools/engine</b>, where the cli package generates config JSON and the engine package generates SAM project based on the config JSON and it also has other utilities required for project generation.
+As previously mentioned  contributions can be,
+
+* Define new Component or Module
+* Add new feature and 
+* Bug Fix
+
+### Define new Component or Module
+Rover has a set of predefined components and modules , you can define components and modules  which are useful and not included in the existing list, 
+Currently Rover has   Components namely,
+* <b>s3 lambda</b>
+* <b>crud</b>
+* <b>s3 bucket</b>
+* <b>lambda</b>
+* <b>dynamoDB</b>
+
+and  Modules like,
+
+  * <b>Base Module </b> 
+  * <b>Test Module </b>
+  * <b>Email Auth Module </b>
+  * <b>CRUD  </b>
+  * <b>RDS </b>
+  * <b>Customizable </b>
+
+
+### Add new feature
+Rover has 2 types of feature one to generate/update AWS SAM project and other one to Deploying SAM  project. 
+
+In Generate/Update AWS SAM these are feature 
+
+* Create SAM project
+* Add Module
+* Add Component
+
+In Deployment these are feature
+
+* Generate CI/CD pipeline
+* Deploy through CLI
+* Deploy through repository
+
+
+
+### Fix/Report Bugs
+Rover Github page has set of issue listed you can work on fixing those issue or if you find any issue while using Rover you can report that.
+
+
+

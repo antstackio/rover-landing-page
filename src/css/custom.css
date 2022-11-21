@@ -68,7 +68,11 @@
   border-top: 1px solid red;
   border-radius: 60px;
 }
-
+.contribution .menu__list-item-collapsible > a::before {
+  content: url("../../static/img/quickIcon.svg");
+  margin-top: 2%;
+  margin-right: 10px;
+}
 .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
   max-height: 400px;
 }
