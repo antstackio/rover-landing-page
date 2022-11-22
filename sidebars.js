@@ -66,7 +66,8 @@ const sidebars = {
         "Contribution/Rover Set Up",
         "Contribution/Define new Components or Module",
         "Contribution/Add new AWS service",
-        "Contribution/Report Bugs or Feature request",
+        "Contribution/Bug Report or Feature request",
+        "Contribution/Bug Fix",
         "Contribution/Code of Conduct",
        
         
