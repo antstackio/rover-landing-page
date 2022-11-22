@@ -73,6 +73,10 @@
   margin-top: 2%;
   margin-right: 10px;
 }
-.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+/* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  max-height: 400px;
+} */
+
+.codeBlockLines_e6Vv {
   max-height: 400px;
 }
