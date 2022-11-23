@@ -1,14 +1,14 @@
 # Introduction
 
 
-Rover is NPM package which helps us in generating/updating AWS SAM projects with help of predefined Modules and Components and It also helps us in deploying projects by generating CI/CD pipeline or directly deploy through CLI.
+Rover is an NPM package which helps us in generating/updating AWS SAM projects with help of predefined Modules and Components. It also helps us in deploying projects by generating CI/CD pipeline or directly deploy through CLI.
 
-Modules are the small  unit of projects which are frequently use like Email Auth Or CRUD.
+Modules are the small business units of an application which are reusable, like authentication, CRUD APIs etc.
 
-Components are one or two AWS services like Lambda with S3 Trigger.
+Components are one or more infrastructure units like Lambda, S3 or a combination of them like API Gateway + Lambda + S3.
 
 And for deployment Rover supports 2 features , one we can generate our own CI/CD pipeline or we can directly deploy through CLI.
-Rover now supports CI/CD generation of these 3 services ,
+Rover presently supports CI/CD pipeline generation of following three services:
 * GitHub
 * BitBucket
 * GitLabs
@@ -16,16 +16,16 @@ Rover now supports CI/CD generation of these 3 services ,
 > Note: Please follow our [Code of Conduct](Code%20of%20Conduct.mdx) 
 
 ## Contributions 
-Rover comprises of 2 packages <b>@rover-tools/cli</b> and <b>@rover-tools/engine</b>, where the cli package generates config JSON and the engine package generates SAM project based on the config JSON and it also has other utilities required for project generation.
-As previously mentioned  contributions can be,
+Rover comprises of two packages <b>@rover-tools/cli</b> and <b>@rover-tools/engine</b>, where the cli generates Rover config (JSON) and the engine generates SAM project based on the Rover config. Engine also has other utilities required for project generation.
+Contributions can be made for the following:
 
 * Define new Component or Module
-* Add new feature and 
+* Add new features 
 * Bug Fix
 
 ### Define new Component or Module
-Rover has a set of predefined components and modules , you can define components and modules  which are useful and not included in the existing list, 
-Currently Rover has   Components namely,
+Rover has a set of predefined components and modules, you can define components and modules which are useful and not included in the existing list, 
+Currently Rover has following Components:
 * <b>s3 lambda</b>
 * <b>crud</b>
 * <b>s3 bucket</b>
@@ -43,7 +43,7 @@ and  Modules like,
 
 
 ### Add new feature
-Rover has 2 types of feature one to generate/update AWS SAM project and other one to Deploying SAM  project. 
+Rover has 2 types of features, one to generate/update AWS SAM project and other one to deploy SAM project. 
 
 In Generate/Update AWS SAM these are feature 
 
