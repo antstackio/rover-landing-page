@@ -16,6 +16,15 @@
   justify-content: space-evenly;
   gap: 75px;
 }
+.installCommandContainer {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-column: 1/-1; */
+  padding-top:10%;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 70%
+}
 
 .infoContainer {
   background: var(--infoBackground);
