@@ -42,7 +42,7 @@ const HomepageHeader = () => {
       </div>
       <div className={Infostyles.installCommandContainer}>
         {installCommand.map((info) => (
-          <InfoContainer key={info.id} data={info} />
+          <InfoContainer key={info.id} data={info}  />
         ))}
       </div>
       <VectorImg mirrorImg="false" />
