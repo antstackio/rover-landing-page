@@ -3,8 +3,21 @@ import styles from "../HomepageHeader/homepageStyle.module.css";
 import VectorImg from "../VectorImg";
 import ThemedImage from "@theme/ThemedImage";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { InfoContainer } from "../Info";
+import Infostyles from "../../components/Info/InfoStyle.module.css";
 
 const HomepageHeader = () => {
+  const installCommand = [
+    {
+      id: 1,
+      title: "Install Rover",
+      subText: "To install Rover just copy this link and paste in your CLI",
+      image: "img/install_cloud.svg",
+      imageDark: "img/install_cloud_dark.svg",
+      altText: "Cloud Icon",
+      copyText: "npm install @rover-tools/cli -g",
+    },
+  ];
   return (
     <>
       <div className={styles.homepageContainer}>
@@ -26,6 +39,11 @@ const HomepageHeader = () => {
             {/* <img src="img/rover_lightmode.gif" alt="CLI" /> */}
           </div>
         </span>
+      </div>
+      <div className={Infostyles.installCommandContainer}>
+        {installCommand.map((info) => (
+          <InfoContainer key={info.id} data={info}  />
+        ))}
       </div>
       <VectorImg mirrorImg="false" />
     </>

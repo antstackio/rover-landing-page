@@ -3,11 +3,13 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import styles from "../../components/Info/InfoStyle.module.css";
 import ThemedImage from "@theme/ThemedImage";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import VectorImg from "../VectorImg";
 
 export const InfoContainer = (props) => {
   const { id, data } = props;
   const [copyText1, setCopyText1] = useState("$ rover init");
   const [copyText2, setCopyText2] = useState("$ rover deploy");
+  const [copyText3, setCopyText3] = useState("npm install @rover-tools/cli -g");
 
   return (
     <a className={styles.infoContainer}>
@@ -62,11 +64,11 @@ const Info = () => {
     },
   ];
   return (
-    <div className={styles.mainContainer}>
-      {infoData.map((info) => (
-        <InfoContainer key={info.id} data={info} />
-      ))}
-    </div>
+      <div className={styles.mainContainer}>
+        {infoData.map((info) => (
+          <InfoContainer key={info.id} data={info} />
+        ))}
+      </div>
   );
 };
 

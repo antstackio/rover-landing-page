@@ -1,5 +1,5 @@
 :root {
-  --roverLogo: url("../../../static/img/rover_logo2.png");
+  --roverLogo: url("../../../static/img/rover_logo2.svg");
   --roverText: #240934;
 }
 
@@ -57,7 +57,7 @@
 } */
 
 html[data-theme="dark"] {
-  --roverLogo: url("../../../static/img/roverLight.png");
+  --roverLogo: url("../../../static/img/rover_logo2_dark.svg");
   --roverText: #ffffff;
 }
 
