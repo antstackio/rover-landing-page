@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer1 from "../Footer1";
 import HomepageHeader from "../HomepageHeader";
 import Info from "../Info";

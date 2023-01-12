@@ -64,11 +64,11 @@ const Info = () => {
     },
   ];
   return (
-      <div className={styles.mainContainer}>
-        {infoData.map((info) => (
-          <InfoContainer key={info.id} data={info} />
-        ))}
-      </div>
+    <div className={styles.mainContainer}>
+      {infoData.map((info) => (
+        <InfoContainer key={info.id} data={info} />
+      ))}
+    </div>
   );
 };
 
