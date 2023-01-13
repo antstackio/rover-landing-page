@@ -79,7 +79,7 @@
 }
 
 html[data-theme="dark"] {
-  --descBackground: #2f2f2f;
+  --descBackground: #2f2f3f;
   --descTitle: #e4e4e4;
   --descBody: #a0a0a0;
 }

@@ -1,9 +1,17 @@
 .mainLanding {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url("../../../static/img/rover-background.svg");
+  /* background-image: url("../../../static/img/background-white-theme.svg"); */
+  /* background-image: url("../../../static/img/new_background.svg"); */
+  background-image: url("../../../static/img/background-dark-theme.svg");
 }
 .landingcontainer {
+  background-repeat: no-repeat;
   margin: 0 auto;
   max-width: 1370px;
+}
+html[data-theme="dark"] {
+  background-repeat: no-repeat;
+  background: #242424;
+  /* background-image: url("../../../static/img/background-dark-theme.svg"); */
 }
