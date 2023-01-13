@@ -26,7 +26,7 @@ const HomepageHeader = () => {
           <div className={styles.roverlogo}>
           </div>
           <div className={styles.roverSubText}>
-            <p className={styles.roverNewTag}> backend by <ThemedImage sources={{
+            <p className={styles.roverNewTag}> backed by <ThemedImage sources={{
               light: useBaseUrl(`img/light_mode_aws.svg`),
               dark: useBaseUrl(`img/dark_mode_aws.svg`),
             }} alt="aws" className={styles.awsTag} /></p>
