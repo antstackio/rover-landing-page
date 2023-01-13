@@ -116,6 +116,19 @@ html[data-theme="dark"] {
     #242424 100%
   );
 }
+.videoBlend {
+  /* position: relative; */
+  /* top: 2%; */
+  /* margin-left: -27.9%; */
+  width: 18%;
+  margin-top: -21.7%;
+  margin-left: 1.5%;
+}
+.videoBlendParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 576px) {
   .roverlogo {
     background-size: 50%;
@@ -129,8 +142,34 @@ html[data-theme="dark"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
     margin-bottom: 0px;
     margin-top: -11%;
+  }
+  .awsTag {
+    width: 47px;
+    height: 28px;
+    margin-top: 4%;
+  }
+  .roverVideo {
+    height: 200px;
+  }
+  .roverVideoText {
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    /* font-weight: 500; */
+    width: 100%;
+    font-size: 12px;
+    /* line-height: 54px; */
+    color: var(--roverText);
+    text-align: center;
+    margin: auto;
+    padding: 0px 10px;
+  }
+  .videoBlend {
+    width: 18%;
+    margin-top: -23.7%;
+    margin-left: 1.5%;
   }
 }
