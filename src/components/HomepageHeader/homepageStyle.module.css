@@ -54,6 +54,7 @@
   color: var(--roverText);
   text-align: center;
   margin: auto;
+  margin-top: -3%;
 }
 .rovercli {
   margin-bottom: -8%;
@@ -61,7 +62,7 @@
   display: flex;
   justify-content: center;
   object-fit: contain;
-  margin-top: -10%;
+  margin-top: 10%;
 }
 
 /* .vectorImg {
