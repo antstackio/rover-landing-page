@@ -16,7 +16,13 @@
   justify-content: space-evenly;
   gap: 75px;
 }
-
+.installCommandContainer {
+  display: flex;
+  padding-top: 10%;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 35%;
+}
 .infoContainer {
   background: var(--infoBackground);
   border: var(--border);
@@ -97,7 +103,8 @@
   background: var(--copyField);
   border-radius: 5px;
   align-items: center;
-  height: 50px;
+  /* height: 50px; */
+  padding: 10px;
   justify-content: space-between;
 }
 
@@ -109,7 +116,7 @@
 }
 
 .copyContainer p {
-  height: 21px;
+  /* height: 21px; */
   margin: 0;
   margin-left: 12px;
   padding: 0;
@@ -120,6 +127,8 @@
   line-height: 21px;
 
   color: #6c6c6c;
+  display: flex;
+  flex-basis: 70%;
 }
 
 html[data-theme="dark"] {
@@ -138,11 +147,17 @@ html[data-theme="dark"] {
     display: flex;
     justify-content: center;
   }
+  .installCommandContainer {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 567px) {
   .mainContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .installCommandContainer {
+    width: 70%;
   }
   .subInfo {
     width: 100%;
