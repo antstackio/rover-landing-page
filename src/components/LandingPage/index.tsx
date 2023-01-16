@@ -9,7 +9,9 @@ const LandingPage = () => {
   return (
     <div className={styles.mainLanding}>
       <div className={styles.landingcontainer}>
-        <HomepageHeader />
+        <div className={styles.homepage}>
+          <HomepageHeader />
+        </div>
         <Info />
         <Instruction />
         <Footer1 />
