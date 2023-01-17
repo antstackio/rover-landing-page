@@ -69,7 +69,7 @@
   border-radius: 60px;
 }
 .contribution .menu__list-item-collapsible > a::before {
-  content: url("../../static/img/quickIcon.svg");
+  content: url("../../static/img/contribution.svg");
   margin-top: 2%;
   margin-right: 10px;
 }
