@@ -64,7 +64,7 @@ const config = {
         logo: {
           alt: "My Site Logo",
           src: "img/roverForBright.png",
-          srcDark: "img/roverForDark.png",
+          srcDark: "img/rover_logo_dark.svg",
         },
         items: [
           {

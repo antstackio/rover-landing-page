@@ -4,6 +4,8 @@ import ThemedImage from "@theme/ThemedImage";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const Footer1 = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <div className={styles.footer1Container}>
       <div className={styles.footer1Body}>
@@ -26,7 +28,7 @@ const Footer1 = () => {
             }}
           />
         </span>
-        <p>© AntStack Technologies Pvt. Ltd. 2022. Privacy Policy</p>
+        <p>© AntStack Technologies Pvt.Ltd.{today.getFullYear()}.Privacy Policy</p>
       </div>
     </div>
   );

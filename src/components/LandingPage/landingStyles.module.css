@@ -1,9 +1,8 @@
 .mainLanding {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url("../../../static/img/rover-background.svg");
+  background-image: url("../../../static/img/background-white-theme.svg");
 }
-.landingcontainer {
-  margin: 0 auto;
-  max-width: 1370px;
+html[data-theme="dark"] {
+  background: #242424;
 }
