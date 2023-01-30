@@ -1,0 +1,141 @@
+# Code Walk Through
+
+
+Rover comprises of two packages one is rover-cli and other one is rover-engine, where rover-cli takes user input converts it to a rover required config  , and then using the config and engine it generates the project.
+
+In rover-engine all the required attributes and functions are divided into 4 categories
+
+* utilities
+* resources
+* deployment
+* configs
+
+### Utilities
+Utilities has all the functions which generats or updates SAM projects and it also comprises of the helpers functions.
+
+#### generateSAM: 
+1. Description: Generates SAM project based on Config JSON.
+2. Path: /Users/dheerajbhatt/proj/rover-engine/utlities/utilities.ts
+3. Input:
+    * **Format** 
+    ```
+
+    ```
+    * example
+    ```
+    {
+      "app_name": "teststruct",
+      "language": "node",
+      "Stacks": {
+        "BaseModuleRlbao": "BaseModule",
+        "BaseModuleKogle": "BaseModule",
+        "EmailAuthModulePsaih": "EmailAuthModule",
+        "EmailAuthModuleWjzvl": "EmailAuthModule",
+        "RDSModuleLzxxx": "RDSModule",
+        "RDSModuleCnxwn": "RDSModule",
+        "CRUDModuleVuayw": "CRUDModule",
+        "CRUDModuleWwaex": "CRUDModule"
+      },
+      "StackParams": {
+        "BaseModuleRlbao": {},
+        "BaseModuleKogle": {},
+        "EmailAuthModulePsaih": {},
+        "EmailAuthModuleWjzvl": {},
+        "RDSModuleLzxxx": {},
+        "RDSModuleCnxwn": {},
+        "CRUDModuleVuayw": {
+          "Book": {
+            "path": "/book",
+            "methods": [
+              "put",
+              "get",
+              "post",
+              "delete",
+              "options"
+            ],
+            "resourcetype": "lambda"
+          },
+          "Author": {
+            "path": "/author",
+            "methods": [
+              "put",
+              "get",
+              "post",
+              "delete",
+              "options"
+            ],
+            "resourcetype": "lambda"
+          }
+        },
+        "CRUDModuleWwaex": {
+          "Book": {
+            "path": "/Book",
+            "methods": [
+              "put",
+              "get",
+              "post",
+              "delete",
+              "options"
+            ],
+            "resourcetype": "lambda"
+          },
+          "Author": {
+            "path": "/author",
+            "methods": [
+              "put",
+              "get",
+              "post",
+              "delete",
+              "options"
+            ],
+            "resourcetype": "lambda"
+          }
+        }
+      },
+      "CustomStacks": {
+        "custom": [
+          "S3 Lambda",
+          "CRUD API",
+          "S3 Bucket",
+          "Lambda",
+          "DynamoDB"
+        ],
+        "custo": [
+          "S3 Lambda",
+          "CRUD API",
+          "S3 Bucket",
+          "Lambda",
+          "DynamoDB"
+        ]
+      }
+    }
+    ```
+4. Workflow:
+#### addComponents: 
+1. Description: Adds one or more resources  to existing project.
+2. Path: /Users/dheerajbhatt/proj/rover-engine/utlities/utilities.ts
+3. Input:
+* format 
+* example
+4. Workflow:
+#### addModules: 
+1. Description: Adds a business unit to existing project.
+2. Path: /Users/dheerajbhatt/proj/rover-engine/utlities/utilities.ts
+3. Input:
+* format 
+* example
+4. Workflow:
+
+
+### Resources
+Resources has all modules, components and their logics defined in [rover format](Define%20new%20Components%20or%20Module),and it also has functions which converts modules and components to SAM template.
+* `resourceGeneration` is the  function   in *rover-engine/resources/resources.ts* which is used in utilities to generate template. 
+* `StackType` is the attribute in *rover-engine/resources/modules.ts* which has all modules defined.
+* `Components` is the attribute in *rover-engine/resources/components.ts* which has all components defined.
+* `LambdaLogics` is the attribute in  *rover-engine/resources/logics.ts* which has all logics.
+
+### Deployment
+Deployment has functions which generates CI/CD pipeline , and the main pipeline generating module is in python.
+silmilar to resources this also takes config json as input and then generates yaml pipeline.  
+
+### Configs

@@ -9,14 +9,33 @@ In packages there is directory called resources and within resources there is fi
 and most of the modules are stored in modules.json file and its stored in this format.
 
 #### Component Structure
+**Component Name** : name of the component that you want 
+* **name** 
+1. type: string 
+2. value: any string without numbers or special characters
+3. description: Resource name that you want in your template
+* **type** : 
+1. type : string 
+2. value: [List of resources](Add%20new%20AWS%20service.mdx) suppoted by Rover
+3. description:  type of resources from list that are supported in rover
+* **config** : 
+1. type : Object 
+2. value: Key and value of the Properties of the resource that you have selected, where key will be property name and Value will be the property value
+3. description :  Configurations are the properties that are in cloudformation template of that resource
+
+* **logic** : 
+1. type : Boolean 
+2. value : if logic defined then "true" else "false"
+3. description :  Logics are boolean value specific to lambda, we have to add logic to LambdaLogics in `rover-engine/resources/logics.ts` with proper naming.
+
+
 ```JSON
 "Component Name":[
       {
         "name":"resource name",
         "type":"resource type ",
         "config":required configuration,
-        "policies":required policies,
-        "logic":whether logic is refined #only for lambda
+        "logic":whether logic is required or not 
     },
     .
     .
@@ -66,10 +85,15 @@ and most of the modules are stored in modules.json file and its stored in this f
 ```
 
 #### Module Structure
+**Module Name** : Name of the module that you want , and this can have any number of stack name and its details in key-value format in it.
+
+**Stack Name** : Name of the stack that you want , and this will have resource list which is array of resources.
+
+**Resource List** : List of resources in [component](Define%20new%20Components%20or%20Module#component-structure) format
 ```JSON
 "Module Name":{
     "Stack1 name":{
-        "resource list":[
+        "Resource List":[
             {
                 "name":"resource name",
                 "type":"resource type ",
