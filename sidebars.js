@@ -61,10 +61,10 @@ const sidebars = {
       type: "category",
       label: "Code Walk Through",
       items: [
-        "Code Walk Through/Introduction",
+        "CodeWalkThrough/Introduction",
         //"Code Walk Through/Rover CLI",
-        "Code Walk Through/Rover Engine",
-        "Code Walk Through/Code Walk Through",
+        "CodeWalkThrough/Rover Engine",
+        "CodeWalkThrough/Code Walk Through",
       ],
       className: "contribution",
     },
