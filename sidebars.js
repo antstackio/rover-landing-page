@@ -59,12 +59,22 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Code Walk Through",
+      items: [
+        "Code Walk Through/Introduction",
+        //"Code Walk Through/Rover CLI",
+        "Code Walk Through/Rover Engine",
+        "Code Walk Through/Code Walk Through",
+      ],
+      className: "contribution",
+    },
+    {
+      type: "category",
       label: "Contribution Gudelines",
       items: [
         
         "Contribution/Introduction",
         "Contribution/Rover Set Up",
-        "Contribution/Code Walk Through",
         "Contribution/Define new Components or Module",
         "Contribution/Add new AWS service",
         "Contribution/Bug Report or Feature request",
@@ -75,6 +85,7 @@ const sidebars = {
       ],
       className: "contribution",
     },
+
   ]
 };
 
