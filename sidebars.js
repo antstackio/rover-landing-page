@@ -57,17 +57,17 @@ const sidebars = {
       ],
       className: "moduleStyle",
     },
-    {
-      type: "category",
-      label: "Code Walk Through",
-      items: [
-        "code-walk-through/introduction",
-        "code-walk-through/rover-cli",
-        "code-walk-through/rover-engine",
-        "code-walk-through/code-walk-through",
-      ],
-      className: "contribution",
-    },
+    // {
+    //   type: "category",
+    //   label: "Code Walk Through",
+    //   items: [
+    //     "code-walk-through/introduction",
+    //     "code-walk-through/rover-cli",
+    //     "code-walk-through/rover-engine",
+    //     "code-walk-through/code-walk-through",
+    //   ],
+    //   className: "contribution",
+    // },
     {
       type: "category",
       label: "Contribution Gudelines",
