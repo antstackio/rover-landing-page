@@ -145,6 +145,9 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+       metadata: [{name: 'description', content: 'Rover is an npm package that generates SAM projects using pre-defined components and modules'},
+      ],
+       
     }),
 };
 

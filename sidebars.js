@@ -38,8 +38,8 @@ const sidebars = {
       type: "category",
       label: "Components",
       items: [
-        "Components/S3_Lambda",
-        "Components/CRUD"
+        "components/s3-lambda",
+        "components/crud"
       ],
       className: "componentStyle",
     },
@@ -48,10 +48,10 @@ const sidebars = {
       label: "Modules",
       items: [
         
-        "Modules/Base Module",
-        "Modules/Email Auth Module",
-        "Modules/CRUD",
-        "Modules/Customizable",
+        "modules/base-module",
+        "modules/email-auth-module",
+        "modules/crud",
+        "modules/customizable",
        
         
       ],
@@ -61,10 +61,10 @@ const sidebars = {
       type: "category",
       label: "Code Walk Through",
       items: [
-        "CodeWalkThrough/Introduction",
-        //"Code Walk Through/Rover CLI",
-        "CodeWalkThrough/Rover Engine",
-        "CodeWalkThrough/Code Walk Through",
+        "code-walk-through/introduction",
+        "code-walk-through/rover-cli",
+        "code-walk-through/rover-engine",
+        "code-walk-through/code-walk-through",
       ],
       className: "contribution",
     },
@@ -73,13 +73,13 @@ const sidebars = {
       label: "Contribution Gudelines",
       items: [
         
-        "Contribution/Introduction",
-        "Contribution/Rover Set Up",
-        "Contribution/Define new Components or Module",
-        "Contribution/Add new AWS service",
-        "Contribution/Bug Report or Feature request",
-        "Contribution/Bug Fix",
-        "Contribution/Code of Conduct",
+        "contribution/introduction",
+        "contribution/rover-set-up",
+        "contribution/define-new-components-or-module",
+        "contribution/add-new-aws-service",
+        "contribution/bug-report-or-feature-request",
+        "contribution/bug-fix",
+        "contribution/code-of-conduct",
        
         
       ],
