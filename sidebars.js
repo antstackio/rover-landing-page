@@ -38,8 +38,8 @@ const sidebars = {
       type: "category",
       label: "Components",
       items: [
-        "components/s3-lambda",
-        "components/crud"
+        "component/s3-lambda",
+        "component/crud-api"
       ],
       className: "componentStyle",
     },
@@ -48,10 +48,10 @@ const sidebars = {
       label: "Modules",
       items: [
         
-        "modules/base-module",
-        "modules/email-auth-module",
-        "modules/crud",
-        "modules/customizable",
+        "module/base-module",
+        "module/email-auth-module",
+        "module/crud-api",
+        "module/custom",
        
         
       ],
@@ -73,13 +73,13 @@ const sidebars = {
       label: "Contribution Gudelines",
       items: [
         
-        "contribution/introduction",
-        "contribution/rover-set-up",
-        "contribution/define-new-components-or-module",
-        "contribution/add-new-aws-service",
-        "contribution/bug-report-or-feature-request",
-        "contribution/bug-fix",
-        "contribution/code-of-conduct",
+        "contributions/introduction",
+        "contributions/rover-set-up",
+        "contributions/define-new-components-or-module",
+        "contributions/add-new-aws-service",
+        "contributions/bug-report-or-feature-request",
+        "contributions/bug-fix",
+        "contributions/code-of-conduct",
        
         
       ],
