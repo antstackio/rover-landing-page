@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Rover is an npm package that generates SAM projects using pre-defined components and modules <head/>">
       {/* <HomepageHeader /> */}
       <main>
         {/* <HomepageFeatures /> */}
