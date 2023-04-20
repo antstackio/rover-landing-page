@@ -1,0 +1,185 @@
+# Rover Engine
+In rover-engine all the required attributes and functions are divided into these categories
+
+  * generateSAM
+  * addComponents
+  * addModules
+  * deployment
+  * helpers
+  * resources
+  * utilities
+
+### generateSAM: 
+1. Description: Generates SAM project based on Config JSON.
+2. Path: rover-engine/src/generateSAM/generateSAM.ts
+3. Input:
+    * **Format** 
+```
+  {
+    "app_name": app name,
+    "language": app language,
+    "stackDetails": {
+      "stack name": {
+        "type": "module type",
+        "params": {},
+        "componentList": Array of Components
+      },
+    }
+  }
+  ```
+  * **Example**
+```
+   {
+  "app_name": "sddf",
+  "language": "node",
+  "stackDetails": {
+    "BaseModule  Jfaxh": {
+      "type": "BaseModule",
+      "params": {},
+      "componentList": []
+    },
+    "TestModule  Zikdk": {
+      "type": "TestModule",
+      "params": {},
+      "componentList": []
+    },
+    "EmailAuthModule  Vdsxb": {
+      "type": "EmailAuthModule",
+      "params": {},
+      "componentList": []
+    },
+    "CRUDModule  Smnvy": {
+      "type": "CRUDModule",
+      "params": {
+        "test": {
+          "path": "/test",
+          "methods": [
+            "put",
+            "get",
+            "post",
+            "delete",
+            "options"
+          ],
+          "resourcetype": "lambda"
+        }
+      },
+      "componentList": []
+    },
+    "RDSModule  Txomv": {
+      "type": "RDSModule",
+      "params": {},
+      "componentList": []
+    },
+    "testcustom": {
+      "type": "Custom",
+      "params": {},
+      "componentList": [
+        "S3 Lambda",
+        "CRUD API",
+        "S3 Bucket",
+        "Lambda",
+        "DynamoDB"
+      ]
+    }
+    }
+  }
+```
+4. Workflow:
+### addComponents: 
+1. Description: Adds one or more resources  to existing project.
+2. Path: rover-engine/src/addComponents/addComponents.ts
+3. Input:
+* **Format** 
+```
+  "app_name": app name,
+  "language": app language,
+  "nested": nested boolean value,
+  "file_name": template file path,
+  "components": component array
+  "nestedComponents": {
+    stack name: {
+      "components": component array,
+      "path": stack path
+    },
+    .
+    .
+    .
+  }
+ 
+```
+* **Example**
+
+**nested stack**
+```
+{
+  "app_name": "sjhh",
+  "language": "node",
+  "nested": true,
+  "file_name": "sjhh/template.yaml\n",
+  "nestedComponents": {
+    "CRUDModuleQgktf": {
+      "components": [
+        "S3 Lambda",
+        "CRUD API",
+        "S3 Bucket",
+        "Lambda",
+        "DynamoDB"
+      ],
+      "path": "CRUDModuleQgktf/template.yaml"
+    },
+    "CRUDModuleAdcji": {
+      "components": [
+        "S3 Lambda",
+        "CRUD API",
+        "S3 Bucket",
+        "Lambda",
+        "DynamoDB"
+      ],
+      "path": "CRUDModuleAdcji/template.yaml"
+    }
+  }
+}
+```
+**single stack**
+```
+{
+  "app_name":"dgbcom",
+  "language":"node",
+  "file_name":"dgbcom/template.yaml\n",
+  "components":["S3 Lambda","CRUD API","S3 Bucket","Lambda","DynamoDB"]
+}
+
+```
+
+4. Workflow:
+### addModules: 
+1. Description: Adds a business unit to existing project.
+2. Path: rover-engine/src/addModules/addModules.ts
+3. Input:
+* Format 
+```
+
+```
+* Example
+```
+
+```
+4. Workflow:
+
+
+### Helpers
+Helpers contains functions which are used in rover-cli.
+
+### Utilities
+Utilities contains config file , scripts and functions which are used within rover-engine.
+
+### Resources
+Resources has all modules, components and their logics defined in [rover format](Contribution/Define%20new%20Components%20or%20Module.mdx),and it also has functions which converts modules and components to SAM template.
+* `resourceGeneration` is the  function   in *rover-engine/resources/resources.ts* which is used in utilities to generate template. 
+* `StackType` is the attribute in *rover-engine/resources/modules.ts* which has all modules defined.
+* `Components` is the attribute in *rover-engine/resources/components.ts* which has all components defined.
+* `LambdaLogics` is the attribute in  *rover-engine/resources/logics.ts* which has all logics.
+
+### Deployment
+Deployment has functions which generates CI/CD pipeline , and the main pipeline generating module is in python.
+silmilar to resources this also takes config json as input and then generates yaml pipeline.  

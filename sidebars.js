@@ -57,23 +57,35 @@ const sidebars = {
       ],
       className: "moduleStyle",
     },
-    // {
-    //   type: "category",
-    //   label: "Contribution Gudelines",
-    //   items: [
+    {
+      type: "category",
+      label: "Code Walk Through",
+      items: [
+        "CodeWalkThrough/Introduction",
+        //"Code Walk Through/Rover CLI",
+        "CodeWalkThrough/Rover Engine",
+        "CodeWalkThrough/Code Walk Through",
+      ],
+      className: "contribution",
+    },
+    {
+      type: "category",
+      label: "Contribution Gudelines",
+      items: [
         
-    //     "Contribution/Introduction",
-    //     "Contribution/Rover Set Up",
-    //     "Contribution/Define new Components or Module",
-    //     "Contribution/Add new AWS service",
-    //     "Contribution/Bug Report or Feature request",
-    //     "Contribution/Bug Fix",
-    //     "Contribution/Code of Conduct",
+        "Contribution/Introduction",
+        "Contribution/Rover Set Up",
+        "Contribution/Define new Components or Module",
+        "Contribution/Add new AWS service",
+        "Contribution/Bug Report or Feature request",
+        "Contribution/Bug Fix",
+        "Contribution/Code of Conduct",
        
         
-    //   ],
-    //   className: "contribution",
-    // },
+      ],
+      className: "contribution",
+    },
+
   ]
 };
 
